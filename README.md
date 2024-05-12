@@ -1,4 +1,16 @@
-# Demo1
+# Tobacco lab test
+
+Before the introduction of the application, users use the excel app to perform the tobacco testing (22 different kinds of tests).
+
+The aim of the application is to solve:
+
+1. Scalability - Excel has limitations in handling large datasets. A database-backed application can handle much larger volumes of data and more complex operations.
+2. Data Integrity: Excel files can be prone to errors, especially when multiple users are updating them concurrently. A database-backed application can enforce data integrity rules, reducing the risk of errors.
+3. Security: Excel files are typically stored on local machines or shared drives, making them vulnerable to unauthorized access. A database-backed application can implement robust security measures to protect sensitive data.
+4. Collaboration: Collaborating on Excel files can be challenging, especially when multiple users need to update the same file. A database-backed application can provide features for concurrent access and collaboration.
+5. Performance: Excel can become slow when dealing with large datasets or complex calculations. A database-backed application can be optimized for performance, providing faster response times.
+6. Reporting and Analysis: While Excel offers basic reporting and analysis capabilities, a database-backed application can provide more advanced reporting and analysis features, such as dashboards and data visualizations.
+7. Integration: Integrating Excel with other systems can be difficult. A database-backed application can be easily integrated with other systems using APIs or other integration methods.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.x.x.
 
