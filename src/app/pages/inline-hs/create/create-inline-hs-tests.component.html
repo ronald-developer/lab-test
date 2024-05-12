@@ -1,0 +1,8 @@
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<ng-template #formTemplateRef>
+  <app-inline-hs-form [reset]="reset" (formChangeEventResult)="save($event)"></app-inline-hs-form>
+</ng-template>
+<app-create-edit-template
+  [contentTitle]="'Create inlinehs test'"
+  [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>

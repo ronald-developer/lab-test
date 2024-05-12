@@ -1,0 +1,12 @@
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<app-banner-message [location]="'component'"></app-banner-message>
+<ng-template #formTemplateRef>
+  <app-tips-form [initialData]="tipsForm" [isEdit]="true" [reset]="reset" (formChangeEventResult)="update($event)"></app-tips-form>
+</ng-template>
+<app-create-edit-template
+  (closeDialog)="close()"
+  [isEdit]="true"
+  [contentTitle]="'Update tips test'"
+  [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>
+<app-tips-test-result></app-tips-test-result>

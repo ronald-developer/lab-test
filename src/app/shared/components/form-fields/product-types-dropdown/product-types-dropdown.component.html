@@ -1,0 +1,11 @@
+<div class="field-wrapper form-floating" (click)="onClick()" [class.is-invalid]="invalid">
+	<ng-select
+		[disabled]="disabled"
+		[(ngModel)]="productTypeId"
+		(ngModelChange)="selectionChanged()"
+		[items]="byProducts"
+		bindLabel="title"
+		bindValue="key">
+	</ng-select>
+	<label>Product types</label>
+  </div>

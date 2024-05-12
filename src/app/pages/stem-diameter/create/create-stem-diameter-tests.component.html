@@ -1,0 +1,10 @@
+
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<ng-template #formTemplateRef>
+  <app-stem-diameter-form [reset]="reset" (formChangeEventResult)="save($event)"></app-stem-diameter-form>
+</ng-template>
+<app-create-edit-template
+  [contentTitle]="'Create stem diameter test'"
+  [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>
+<app-stem-diameter-test-result></app-stem-diameter-test-result>

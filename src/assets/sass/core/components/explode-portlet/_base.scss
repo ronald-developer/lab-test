@@ -1,0 +1,14 @@
+.explode-portlet-popup{
+	transform: none !important;
+	.explode-action{
+		right: 12px;
+		top: 24px;
+		z-index: 10;
+		padding: 5px;
+	}
+}
+app-explode-portlet{
+	.card-toolbar{
+		background-color: #cfd0d129;
+	}
+}

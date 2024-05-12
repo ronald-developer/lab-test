@@ -1,0 +1,36 @@
+<ng-container *ngIf="errorMessage$|async as errorMessage">
+    <div
+        *ngIf="errorMessage && location === errorMessage.showErrorLocationLevel"
+        class="notice d-flex rounded border p-6 position-relative banner-message-container"
+        [ngClass]="errorMessage.severity === 'warning' ? 'bg-light-warning border-warning' : 'bg-danger border-danger'">
+        <span
+            (click)="close()"
+            [inlineSVG]="'./assets/media/icons/gen040.svg'"
+            role="button"
+            class="svg-icon svg-icon-1tx position-absolute p-1 top-0 end-0 h6">
+            </span>
+        <span
+            [inlineSVG]="'../../../../assets/media/icons/duotune/general/gen044.svg'"
+            class="svg-icon svg-icon-2tx svg-icon-warning me-4 align-self-center"
+            [class.text-white]="errorMessage.severity === 'critical'">
+        </span>
+        <div class="d-flex flex-stack flex-grow-1">
+            <div class="fw-bold">
+                <h3 class="m-0">{{errorMessage.title}}</h3>
+                <div class="fs-6 ">
+                <ng-container *ngTemplateOutlet="isMessages(errorMessage.message) ? messagesTemp : messageTemp; context: { $implicit: errorMessage.message }">
+                </ng-container>
+                </div>
+                <ng-template #messageTemp let-msg>
+                    {{msg}}
+                </ng-template>
+                <ng-template #messagesTemp let-messages>
+                    <ul class="mb-0">
+                        <li *ngFor="let msg of messages">{{msg}}</li>
+                    </ul>
+                </ng-template>
+            </div>
+        </div>
+  </div>
+</ng-container>
+

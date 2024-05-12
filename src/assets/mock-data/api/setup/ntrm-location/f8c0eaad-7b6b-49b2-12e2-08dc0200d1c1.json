@@ -1,0 +1,10 @@
+{
+    "errorMessages": null,
+    "response": {
+        "data": {
+            "id": "f8c0eaad-7b6b-49b2-12e2-08dc0200d1c1",
+            "name": "Africa",
+            "isActive": true
+        }
+    }
+}

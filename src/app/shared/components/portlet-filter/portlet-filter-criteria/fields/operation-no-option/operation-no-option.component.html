@@ -1,0 +1,8 @@
+<div [formGroup]="formFilters" class="operation-option field-wrapper" *ngIf="!hide">
+    <div class="form-check my-4">
+        <input class="form-check-input" type="checkbox" id="operationNoOption" [checked]="true" (change)="check()" formControlName="{{controlName}}">
+        <label class="form-check-label" for="operationNoOption">
+          Filter by operation no
+        </label>
+    </div>
+</div>

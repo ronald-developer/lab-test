@@ -1,0 +1,20 @@
+<div [formGroup]="formFilters" class="field-wrapper form-floating" *ngIf="!hide">
+        <input
+          autocomplete="off"
+          class="form-control"
+          placeholder="yyyy-mm-dd"
+          name="fromDate"
+          formControlName="{{controlName}}"
+          #dp="bsDaterangepicker"
+          bsDaterangepicker
+          [dateCustomClasses]="dateCustomClasses"
+          [bsConfig]="{ adaptivePosition: true, rangeInputFormat : 'MM/DD/YYYY' ,dateInputFormat:'MM/DD/YYYY'}"
+        />
+        <span class="calendar-picker">
+            <i class="bi bi-calendar3 calendar-icon" type="button"
+                (click)="dp.toggle()"
+                [attr.aria-expanded]="dp.isOpen">
+            </i>
+        </span>
+        <label for="floatingInput">Select date</label>
+</div>

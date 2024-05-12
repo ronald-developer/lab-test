@@ -1,0 +1,30 @@
+<div [formGroup]="formFilters" class="field-wrapper timepicker-el">
+    <div #parentContainer class="form-floating">
+        <input #inputElement
+            [value]="model?.value"
+            readonly
+            #timePickerMenuElement
+            data-kt-menu-static="true"
+            data-kt-menu-trigger="click"
+            data-kt-menu-placement="bottom-start"
+            class="form-control"/>
+        <label for="floatingInput">Select time</label>
+        <span class="time-picker">
+            <i class="bi bi-clock-history clock-icon" type="button"></i>
+        </span>
+        <div #timePickerMenuContainerElement
+            appMenuKtListener
+            [parentContainerElement]="parentContainer"
+            data-kt-menu="true"  class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold">
+           <div class="d-flex">
+                <timepicker formControlName="{{controlName}}" class="flex-grow-1 mx-5"></timepicker>
+                <div class="d-flex mx-5 gap-3">
+                    <button class="btn btn-success h-40 align-self-center" (click)="setTimeNow()">Now</button>
+                    <button class="btn btn-secondary h-40 align-self-center" (click)="close()">Close</button>
+                </div>
+           </div>
+        </div>
+    </div>
+
+</div>
+

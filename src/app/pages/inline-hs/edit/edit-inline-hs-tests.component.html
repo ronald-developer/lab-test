@@ -1,0 +1,11 @@
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<app-banner-message [location]="'component'"></app-banner-message>
+<ng-template #formTemplateRef>
+  <app-inline-hs-form [initialData]="inlineHsForm" [isEdit]="true" [reset]="reset" (formChangeEventResult)="update($event)"></app-inline-hs-form>
+</ng-template>
+<app-create-edit-template
+  (closeDialog)="close()"
+  [isEdit]="true"
+  [contentTitle]="'Update inlinehs test'"
+  [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>

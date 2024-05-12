@@ -1,0 +1,14 @@
+
+<div class="menu-item py-4 px-3 d-flex justify-content-between">
+    <ng-content></ng-content>
+    <ng-content select=".toggle-btn"></ng-content>
+</div>
+
+<div class="separator border-primary mb-1 opacity-25"></div>
+
+<div class="menu-item pt-2 pb-5 px-5">
+    <ng-template #filterCriteriaTemp>
+        <ng-container *ngTemplateOutlet="filterCriteriaTemplateRef"></ng-container>
+    </ng-template>
+    <ng-container *ngTemplateOutlet="filterCriteriaTemp"></ng-container>
+</div>

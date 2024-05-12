@@ -1,0 +1,340 @@
+<div class="card content-body" >
+	<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+	<div class="card-body pt-5 pb-0 px-5">
+		<div class="d-flex">
+			<div class="col-12">
+				<div [formGroup]="formGroup" class="row g-3">
+					<div *ngIf="formGroup.controls.operationOrderId as ctrl" class="col-md-12 app-form-control">
+						<app-operation-order-mothergrade-dropdown
+						  formControlName="operationOrderId"
+						  [invalid]="isOperationOrderDropdownInvalid"
+						  (motherGradeCodeChanged)="motherGradeCodeChanged($event)">
+						</app-operation-order-mothergrade-dropdown>
+						<ng-container *ngIf="isOperationOrderDropdownInvalid">
+							<span class="text-danger">{{ctrl?.errors?.invalidTestInput}}</span>
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+					<div *ngIf="formGroup.controls.productTypeId as ctrl" class="col-md-6 app-form-control">
+						<app-product-types-dropdown
+						  formControlName="productTypeId"
+						  [invalid]="isProductTypeDropdownInvalid"
+						  [operationOrderId]="operationOrderId"
+						  (productTypeChanged)="productTypeChanged()">
+						</app-product-types-dropdown>
+						<ng-container *ngIf="isProductTypeDropdownInvalid">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div *ngIf="formGroup.controls.packingGradeId as ctrl" class="col-md-6 app-form-control">
+						<app-by-products-packing-grade-dropdown
+						  formControlName="packingGradeId"
+						  [invalid]="isPackingGradeDropdownInvalid"
+						  [productTypeId]="productTypeId">
+						</app-by-products-packing-grade-dropdown>
+						<ng-container *ngIf="isPackingGradeDropdownInvalid">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div *ngIf="formGroup.controls.testUnitOfMeasure as ctrl" class="col-md-6 app-form-control">
+						<app-test-uom-dropdown
+						  formControlName="testUnitOfMeasure"
+						  [invalid]="isTestUnitOfMeasureDropdownInvalid">
+						</app-test-uom-dropdown>
+						<ng-container *ngIf="isTestUnitOfMeasureDropdownInvalid">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="separator border-primary mb-1 opacity-25"></div>
+
+					<div>
+					  <h5 class="mb-0">Conducted on</h5>
+					</div>
+
+					<div *ngIf="formGroup.controls.shiftType as ctrl" class="col-md-4 app-form-control">
+						<app-shift-type-dropdown
+							formControlName="shiftType"
+							[invalid]="isShiftTypeDropdownInvalid">
+						</app-shift-type-dropdown>
+						<ng-container *ngIf="isShiftTypeDropdownInvalid">
+							<span class="text-danger">{{ctrl?.errors?.invalidTestInput}}</span>
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div *ngIf="formGroup.controls.entryDate as ctrl" class="col-md-4 app-form-control">
+						<app-date-entry *ngIf="formGroup.controls.entryDate as ctrl"
+							formControlName="entryDate"
+							[invalid]="isEntryDateDropdownInvalid">
+						</app-date-entry>
+						<ng-container *ngIf="isEntryDateDropdownInvalid">
+							<span class="text-danger">{{ctrl?.errors?.invalidTestInput}}</span>
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div *ngIf="formGroup.controls.entryTime as ctrl" class="col-md-4 app-form-control">
+						<app-time-entry *ngIf="formGroup.controls.entryTime as ctrl"
+							formControlName="entryTime"
+							[invalid]="isEntryTimeDropdownInvalid">
+						</app-time-entry>
+						<ng-container *ngIf="isEntryTimeDropdownInvalid">
+							<span class="text-danger">{{ctrl?.errors?.invalidTestInput}}</span>
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="separator border-primary mb-1 opacity-25"></div>
+
+					<div>
+					  <h5 class="mb-0">Test input values</h5>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-12" *ngIf="formGroup.controls.sampleWeight as ctrl">
+						<input appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="sampleWeight">
+						<label>Sample weight</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.weed as ctrl">
+						<input appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="weed">
+						<label>Weed</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.wood as ctrl">
+						<input appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="wood">
+						<label>Wood</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.fibres as ctrl">
+						<input appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="fibres">
+						<label>Fibers</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.paper as ctrl">
+						<input appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="paper">
+						<label>Paper</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.feathers as ctrl">
+						<input appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="feathers">
+						<label>Feathers</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.insects as ctrl">
+						<input appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="insects">
+						<label>Insects</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.otherOrganic as ctrl">
+						<input appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="otherOrganic">
+						<label>Other organic</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.otherOrganicType as ctrl">
+						<input
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="otherOrganicType">
+						<label>Other organic type</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.rocks as ctrl">
+						<input appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="rocks">
+						<label>Rocks</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.metals as ctrl">
+						<input
+							appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="metals">
+						<label>Metals</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.otherInorganicNonSynthetic as ctrl">
+						<input
+							appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="otherInorganicNonSynthetic">
+						<label>Other inorganic non-synthetic</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.otherInorganicNonSyntheticType as ctrl">
+						<input
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="otherInorganicNonSyntheticType">
+						<label>Other inorganic non-synthetic type</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.nylon as ctrl">
+						<input
+							appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="nylon">
+						<label>Nylon</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.rubber as ctrl">
+						<input
+							appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="rubber">
+						<label>Rubber</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.foam as ctrl">
+						<input
+							appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="foam">
+						<label>Foam</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.plastic as ctrl">
+						<input
+							appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="plastic">
+						<label>Plastic</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.otherInorganicSynthetic as ctrl">
+						<input
+							appNumberDecimal [decimalPlaces]="3"
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="otherInorganicSynthetic">
+						<label>Other inorganic synthetic</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.otherInorganicSyntheticType as ctrl">
+						<input
+							type="text"
+							class="form-control"
+							[class.is-invalid]="ctrl.invalid && ctrl.touched"
+							formControlName="otherInorganicSyntheticType">
+						<label>Other inorganic synthetic type</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+	  <div class="d-flex justify-content-start my-5">
+		<button class="btn btn-primary btn-sm" (click)="save()" >{{isEdit? 'Update':'Create'}}</button>
+	  </div>
+	</div>
+  </div>

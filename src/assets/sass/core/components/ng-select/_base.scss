@@ -1,0 +1,24 @@
+.ng-select.ng-select-single .ng-select-container {
+    height:3.9rem!important;
+  }
+.ng-select.ng-select-single .ng-select-container .ng-value-container .ng-input {
+    top:15px;
+}
+.ng-select.ng-select-single .ng-select-container .ng-value-container {
+    padding-top: 1.85rem;
+    padding-bottom: 0.625rem;
+    padding-left: 14px;
+    color: var(--kt-input-color);
+}
+.ng-select.ng-select-single .ng-select-container{
+    border: 1px solid var(--kt-input-border-color);
+    box-shadow: none !important;
+}
+.form-floating > label {
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    opacity: 0.65;
+}
+.ng-select.ng-select-searchable .ng-select-container .ng-value-container .ng-input
+{
+    padding-top: 18px;
+}

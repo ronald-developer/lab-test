@@ -1,0 +1,10 @@
+{
+    "errorMessages": null,
+    "response": {
+        "data": {
+            "id": "0e24a8ff-787a-4a4b-ee45-08dc5f8dee88",
+            "name": "Chocolate",
+            "isActive": true
+        }
+    }
+}

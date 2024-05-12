@@ -1,0 +1,19 @@
+
+<ng-template #editHeaderTemplate>
+    <div class="modal-header">
+        <h4 class="modal-title">{{contentTitle}}</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="close()"></button>
+    </div>
+</ng-template>
+
+<div class="page-content-container">
+    <div class="card content-header">
+        <ng-container *ngIf="!isEdit; else editHeaderTemplate">
+            <div class="card-header border-0 pt-2 px-5">
+                <span class="content-header-title fs-3">{{contentTitle}}</span>
+            </div>
+        </ng-container>
+        <div class="separator border-primary mb-1 opacity-25"></div>
+    </div>
+    <ng-container *ngTemplateOutlet="contentBodyTemplateRef"></ng-container>
+</div>

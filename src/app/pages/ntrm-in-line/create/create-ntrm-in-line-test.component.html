@@ -1,0 +1,10 @@
+
+<app-banner-message [location]="'component'"></app-banner-message>
+<ng-template #formTemplateRef>
+	<app-ntrm-in-line-form [reset]="reset" (formChangeEventResult)="save($event)"></app-ntrm-in-line-form>
+  </ng-template>
+  <ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+  <app-create-edit-template
+	[contentTitle]="'Create ntrm product test'"
+	[contentBodyTemplateRef]="formTemplateRef">
+  </app-create-edit-template>

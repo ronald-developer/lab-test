@@ -1,0 +1,15 @@
+<div>
+  <ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+  <div class="card-header border-0 pt-5">
+      <div class="card-toolbar">
+          <app-portlet-filter
+              [form]="cfg.form"
+              [tableFilterTitle]="cfg.tableFilterTitle"
+              [filterButtonLabel]="cfg.filterButtonLabel"
+              [pinned]="cfg.pinned"
+              [noRefreshButton]="cfg.noRefreshButton"
+              (search)="onExport($event)">
+          </app-portlet-filter>
+      </div>
+  </div>
+</div>

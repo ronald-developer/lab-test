@@ -1,0 +1,158 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "newProjectRoot": "projects",
+    "projects": {
+        "tombwe-lab-test": {
+            "projectType": "application",
+            "schematics": {
+                "@schematics/angular:component": {
+                    "style": "scss"
+                },
+                "@schematics/angular:application": {
+                    "strict": true
+                }
+            },
+            "root": "",
+            "sourceRoot": "src",
+            "prefix": "app",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "options": {
+                        "outputPath": "dist/tombwe-lab-test",
+                        "allowedCommonJsDependencies": [
+                            "object-path",
+                            "apexcharts",
+                            "clipboard.js",
+                            "prismjs",
+                            "file-saver",
+							"highcharts",
+              				"highcharts-custom-events"
+                        ],
+                        "index": "src/index.html",
+                        "main": "src/main.ts",
+                        "polyfills": "src/polyfills.ts",
+                        "tsConfig": "tsconfig.app.json",
+                        "inlineStyleLanguage": "scss",
+                        "assets": [
+                            "src/favicon.ico",
+                            "src/assets",
+                            "src/web.config"
+                        ],
+                        "styles": [
+                            "src/styles.scss",
+                            "./node_modules/@ng-select/ng-select/themes/default.theme.css",
+                            "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+                            "./node_modules/ngx-toastr/toastr.css"
+                        ],
+                        "scripts": []
+                    },
+                    "configurations": {
+                        "production": {
+                            "budgets": [
+                                {
+                                    "type": "initial",
+                                    "maximumWarning": "2mb",
+                                    "maximumError": "5mb"
+                                },
+                                {
+                                    "type": "anyComponentStyle",
+                                    "maximumWarning": "2kb",
+                                    "maximumError": "4kb"
+                                }
+                            ],
+                            "fileReplacements": [
+                                {
+                                    "replace": "src/environments/environment.ts",
+                                    "with": "src/environments/environment.prod.ts"
+                                }
+                            ],
+                            "outputHashing": "all",
+							"buildOptimizer": true,
+                            "optimization": true,
+                            "vendorChunk": true,
+                            "extractLicenses": true,
+                            "sourceMap": false,
+                            "namedChunks": false
+                        },
+						"test": {
+                            "budgets": [
+                                {
+                                    "type": "initial",
+                                    "maximumWarning": "6mb",
+                                    "maximumError": "6mb"
+                                },
+                                {
+                                    "type": "anyComponentStyle",
+                                    "maximumWarning": "3kb",
+                                    "maximumError": "4kb"
+                                }
+                            ],
+                            "fileReplacements": [
+                                {
+                                    "replace": "src/environments/environment.ts",
+                                    "with": "src/environments/environment.test.ts"
+                                }
+                            ],
+                            "buildOptimizer": false,
+                            "optimization": false,
+                            "vendorChunk": true,
+                            "extractLicenses": false,
+                            "sourceMap": true,
+                            "namedChunks": true
+                        },
+                        "development": {
+                            "buildOptimizer": false,
+                            "optimization": false,
+                            "vendorChunk": true,
+                            "extractLicenses": false,
+                            "sourceMap": true,
+                            "namedChunks": true
+                        }
+                    },
+                    "defaultConfiguration": "production"
+                },
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "configurations": {
+                        "production": {
+                            "browserTarget": "tombwe-lab-test:build:production"
+                        },
+                        "development": {
+                            "browserTarget": "tombwe-lab-test:build:development"
+                        },
+						"local-serve-with-ssl-test": {
+                            "browserTarget": "tombwe-lab-test:build:test",
+							"sslCert": "./ssl/MyLocalhostServer.crt",
+                            "sslKey": "./ssl/MyLocalhostServer.key",
+                            "ssl": true
+                        },
+                        "development-ssl": {
+                            "browserTarget": "tombwe-lab-test:build:development",
+                            "sslCert": "./ssl/MyLocalhostServer.crt",
+                            "sslKey": "./ssl/MyLocalhostServer.key",
+                            "ssl": true
+                        }
+                    },
+                    "defaultConfiguration": "development"
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "src/tsconfig.app.json",
+                            "src/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "cli": {
+        "analytics": false
+    }
+}

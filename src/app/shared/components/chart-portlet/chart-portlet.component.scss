@@ -1,0 +1,17 @@
+.chart-wrapper{
+	position: relative;
+
+	.chart-arrow-left, .chart-arrow-right{
+		overflow: auto;
+		margin: auto;
+		position: absolute;
+		z-index: 10;
+		background-color: #00800061;
+	}
+	.chart-arrow-left{
+		left: 5px; bottom: 0; top: 0;
+	}
+	.chart-arrow-right{
+		right: 5px; bottom: 0; top: 0;
+	}
+}

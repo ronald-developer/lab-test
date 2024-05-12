@@ -1,0 +1,26 @@
+<div class="card-toolbar">
+	<div class="d-flex justify-content-start">
+		<button
+			#toggler
+			(click)="onExplodeToggleClick()"
+			title="Fullscreen"
+			type="button"
+			class="btn btn-icon btn-color-primary"
+			data-kt-menu-static="true"
+			data-kt-menu-trigger="click"
+			data-kt-menu-offset="0,20"
+			data-kt-menu-placement="top-start">
+			<span class="d-flex gap-2" >
+				<i class="fas fa-expand-alt align-self-center px-2"></i>
+			</span>
+		</button>
+		<app-explode-portlet-popup
+			[explodePortletContentTemplateRef]="contentTemplate"
+			appMenuKtListener>
+			<span role="button" class="toggle-btn d-flex gap-3">
+				<i class="bi bi-x fs-2 align-self-center" (click)="close()"></i>
+			</span>
+		</app-explode-portlet-popup>
+	</div>
+
+</div>

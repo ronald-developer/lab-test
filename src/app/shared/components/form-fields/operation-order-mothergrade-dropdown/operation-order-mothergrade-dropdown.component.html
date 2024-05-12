@@ -1,0 +1,27 @@
+<div class="d-flex">
+  <div class="col-md-12 flex-grow-1">
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="field-wrapper form-floating" (click)="onClick()" [class.is-invalid]="invalid">
+          <ng-select
+              [(ngModel)]="operationOrderId"
+              (ngModelChange)="selectionChanged()"
+              [items]="operationOrderMotherGradeOptions"
+              bindLabel="title"
+              bindValue="key"
+			  [disabled]="disabled">
+          </ng-select>
+          <label>Operation no</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="field-wrapper form-floating bg-gray-100">
+          <input id="motherGradeCode" type="text" class="form-control" [value]="motherGradeCode" readonly>
+          <label>Mother grade</label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

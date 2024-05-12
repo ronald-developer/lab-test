@@ -1,0 +1,104 @@
+<div>
+	<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+	<div class="card-header border-0 pt-5">
+		<div class="card-toolbar">
+			<div class="bg-white">
+				<div class="p-3 d-flex">
+					<div class="menu-content fs-2 text-dark fw-bolder px-1 py-1 flex-grow-1 align-self-center">
+						Import result
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<app-table
+		[tableRowsTemplateRef]="tableRowsTemplate"
+		[tableHeaderRowTemplateRef]="tableHeaderRowTemplate"
+		[disablePagination]="true">
+	</app-table>
+
+	<ng-template #tableHeaderRowTemplate>
+		<tr class="fw-bolder text-muted">
+			<th class="min-w-50px text-start">Line no</th>
+			<th class="min-w-150px">Error message</th>
+		</tr>
+	</ng-template>
+
+	<ng-template #tableRowsTemplate>
+		<ng-container *ngIf="result">
+			<tr *ngFor="let item of result.errors">
+				<td class="text-start">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{item.lineNo}}
+					</span>
+				</td>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+					{{item.errorMessage}}
+					</span>
+				</td>
+			</tr>
+		</ng-container>
+	</ng-template>
+
+	<app-table
+		[tableRowsTemplateRef]="tableSummaryRowsTemplate"
+		[tableHeaderRowTemplateRef]="tableSummaryHeaderRowTemplate"
+		[disablePagination]="true">
+	</app-table>
+
+	<ng-template #tableSummaryHeaderRowTemplate>
+		<tr class="fw-bolder text-muted">
+			<th class="min-w-120px text-start">Error count</th>
+			<th class="min-w-120px text-start">Has errors</th>
+			<th class="min-w-150px">Has critical errors</th>
+			<th class="min-w-150px">Records created</th>
+			<th class="min-w-150px">Records updated</th>
+			<th class="min-w-150px">Records found</th>
+			<th class="min-w-150px">Records failed</th>
+		</tr>
+	</ng-template>
+
+	<ng-template #tableSummaryRowsTemplate>
+		<ng-container *ngIf="result">
+			<tr>
+				<td class="text-start">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{result.errorCount}}
+					</span>
+				</td>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{result.hasErrors? 'Yes': 'No'}}
+					</span>
+				</td>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{result.hasCriticalErrors? 'Yes': 'No'}}
+					</span>
+				</td>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{result.recordsCreated}}
+					</span>
+				</td>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{result.recordsUpdated}}
+					</span>
+				</td>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{result.recordsFound}}
+					</span>
+				</td>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{result.recordsFailed}}
+					</span>
+				</td>
+			</tr>
+		</ng-container>
+	</ng-template>
+</div>

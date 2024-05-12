@@ -1,0 +1,92 @@
+<div>
+  <ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+  <div class="card-header border-0 pt-5">
+      <div class="card-toolbar">
+          <app-portlet-filter
+              [form]="formFilter"
+              [tableFilterTitle]="'InlineHs tests'"
+              (valueChanged)="onFilterCriteriaChanged($event)"
+              (refresh)="search()"
+              (search)="search()">
+          </app-portlet-filter>
+      </div>
+  </div>
+
+  <app-table
+      [tableRowsTemplateRef]="tableRowsTemplate"
+      [tableHeaderRowTemplateRef]="tableHeaderRowTemplate"
+      [currentPage]="currentPage"
+      [totalCount]="totalCount"
+      [pageSize]="defaultPageSize"
+      (pageChanged)="search($event)">
+  </app-table>
+
+  <ng-template #tableHeaderRowTemplate>
+      <tr class="fw-bolder text-muted">
+          <th class="min-w-50px text-start">Actions</th>
+          <th class="min-w-150px">Operation order no</th>
+          <th class="min-w-140px">Mother grade code</th>
+          <th class="min-w-120px">Shift type title</th>
+          <th class="min-w-120px">Entry date</th>
+		  <th class="min-w-120px">NCP</th>
+      </tr>
+  </ng-template>
+  <ng-template #editTooltip><b>Edit inline hs</b></ng-template>
+  <ng-template #deleteTestTooltip><b>Delete test</b></ng-template>
+  <ng-template #tableRowsTemplate>
+      <ng-container *ngIf="dataSource|async as source">
+
+          <tr *ngFor="let item of source.results">
+              <td class="text-start">
+				<ng-container *ngIf="!item.isDeleted">
+					<span
+						[ngbTooltip]="editTooltip"
+						class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
+						(click)="edit(item.id)"
+						appUiGuard [route]="editRoute">
+						<span [inlineSVG]="'./assets/media/icons/edit-pencil.svg'" class="svg-icon svg-icon-3"></span>
+					</span>
+					<span
+						[ngbTooltip]="deleteTestTooltip"
+						class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
+						(click)="delete(item.id)"
+						appUiGuard [route]="currentRoute" [pageAction]="'delete'">
+						<span [inlineSVG]="'./assets/media/icons/delete.svg'" class="svg-icon svg-icon-3"></span>
+					</span>
+				</ng-container>
+
+              </td>
+              <td>
+                  <span class="text-dark fw-bolder text-hover-primary fs-6">
+                  {{item.operationOrderDisplayNo}}
+                  </span>
+              </td>
+              <td>
+                  <span class="text-dark fw-bolder text-hover-primary fs-6">
+                      {{item.motherGradeCode}}
+                  </span>
+              </td>
+              <td>
+                  <span class="text-dark fw-bolder text-hover-primary fs-6">
+                      {{item.shiftTypeTitle}}
+                  </span>
+              </td>
+              <td>
+                  <span class="text-dark fw-bolder text-hover-primary fs-6">
+                      {{item.entryDate | date:'dd/MM/yyyy'}}
+                  </span>
+              </td>
+			  <td>
+				<span class="text-dark fw-bolder text-hover-primary fs-6">
+					<div class="form-check form-check-custom form-check-solid form-check-success form-switch">
+						<div class="form-check form-check-custom form-check-solid form-switch">
+							<input [disabled]="item.isDeleted" #checkboxRef class="form-check-input" [checked]="item.isNonCompliant" type="checkbox" name="ncp" (change)="confirmation(item.id,checkboxRef)" />
+						</div>
+					</div>
+				</span>
+			</td>
+          </tr>
+      </ng-container>
+
+  </ng-template>
+</div>

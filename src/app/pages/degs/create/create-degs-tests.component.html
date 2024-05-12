@@ -1,0 +1,9 @@
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<ng-template #formTemplateRef>
+  <app-degs-form [reset]="reset" (formChangeEventResult)="save($event)"></app-degs-form>
+</ng-template>
+<app-create-edit-template
+  [contentTitle]="'Create degs test'"
+  [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>
+<app-degs-test-result></app-degs-test-result>

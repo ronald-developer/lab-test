@@ -1,0 +1,58 @@
+<div>
+	<div class="card card-header">
+	  <h4 class="mb-0">Calculated tests result</h4>
+	</div>
+	<app-table
+		[disablePagination]="true"
+		[tableRowsTemplateRef]="tableRowsTemplate"
+		[tableHeaderRowTemplateRef]="tableHeaderRowTemplate">
+	</app-table>
+
+	<ng-template #tableHeaderRowTemplate>
+		<tr class="fw-bolder text-muted">
+			<th class="min-w-120px text-center">% OBJ</th>
+			<th class="min-w-120px text-center">% OVER 7 MESH</th>
+			<th class="min-w-120px text-center">% OVER 12 MESH</th>
+			<th class="min-w-120px text-center">% TOTAL (7+12)</th>
+			<th class="min-w-120px text-center">% PAN (FIBRE)</th>
+			<th class="min-w-120px text-center">% TOTAL STEM (FIBRE IN)</th>
+		</tr>
+	</ng-template>
+
+	<ng-template #tableRowsTemplate>
+		<ng-container >
+			<tr *ngIf="dataSource$ | async as testResult">
+				<td class="text-center">
+					<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+					  {{testResult.obj | percent:'1.2-2'}}
+					</span>
+				</td>
+				<td class="text-center">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+					  {{testResult.over7Mesh | percent:'1.2-2'}}
+					</span>
+				</td>
+				<td class="text-center">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+					  {{testResult.over12Mesh | percent:'1.2-2'}}
+					</span>
+				</td>
+				<td class="text-center">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+					  {{testResult.totalOverMesh | percent:'1.2-2'}}
+					</span>
+				</td>
+				<td class="text-center">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+					  {{testResult.pan | percent:'1.2-2'}}
+					</span>
+				</td>
+				<td class="text-center">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+					  {{testResult.totalStem | percent:'1.2-2'}}
+					</span>
+				</td>
+			</tr>
+		</ng-container>
+	</ng-template>
+  </div>

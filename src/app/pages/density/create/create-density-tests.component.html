@@ -1,0 +1,10 @@
+
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<ng-template #formTemplateRef>
+  <app-density-form [reset]="reset" (formChangeEventResult)="save($event)"></app-density-form>
+</ng-template>
+<app-create-edit-template
+  [contentTitle]="'Create density test'"
+  [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>
+<app-density-test-result></app-density-test-result>

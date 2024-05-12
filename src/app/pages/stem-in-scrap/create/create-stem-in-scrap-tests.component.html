@@ -1,0 +1,10 @@
+
+<ng-template #formTemplateRef>
+  <app-stem-in-scrap-form [reset]="reset" (formChangeEventResult)="save($event)"></app-stem-in-scrap-form>
+</ng-template>
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<app-create-edit-template
+  [contentTitle]="'Create stem in scrap test'"
+  [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>
+<app-stem-in-scrap-test-result></app-stem-in-scrap-test-result>

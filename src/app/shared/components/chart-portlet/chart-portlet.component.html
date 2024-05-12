@@ -1,0 +1,44 @@
+
+<div>
+	<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+	<app-explode-portlet
+		[explodePortletContentTemplateRef]="isFullscreen ? chartTemp : emptyTemp"
+		(explodeContentShown)="explodeContentShown($event)">
+	</app-explode-portlet>
+	<ng-container *ngIf="!isFullscreen">
+		<ng-container *ngTemplateOutlet="chartTemp;"></ng-container>
+	</ng-container>
+</div>
+
+<ng-template #emptyTemp></ng-template>
+
+<ng-template #chartTemp>
+	<div class="chart-wrapper" [class.fullscreen]="isFullscreen">
+		<button
+			[disabled]="page===1"
+			(click)="onPrevPageClick()" role="button" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary btn-color-secondary chart-arrow-left">
+			<span [inlineSVG]="'./assets/media/icons/arr-left.svg'" class="svg-icon svg-icon-2"></span>
+		</button>
+		<button
+			[disabled]="!enableNextPage"
+			(click)="onNextPageClick()" role="button" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary btn-color-secondary chart-arrow-right">
+			<span [inlineSVG]="'./assets/media/icons/arr-right.svg'" class="svg-icon svg-icon-2"></span>
+		</button>
+		<div class="chart-container">
+			<div class="card-header border-0">
+				<div class="card-toolbar">
+					<app-portlet-filter
+						[noSearchButton]="true"
+						[formFieldOrientation]="'horizontal'"
+						[form]="formFilter"
+						[pinned]="true"
+						(valueChanged)="onFilterCriteriaChanged($event)"
+						(refresh)="refresh()">
+					</app-portlet-filter>
+				</div>
+			</div>
+			<div class="chart-host" [chart]="chartModel"></div>
+		</div>
+	</div>
+</ng-template>
+

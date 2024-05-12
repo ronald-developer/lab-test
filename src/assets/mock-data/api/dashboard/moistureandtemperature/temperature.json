@@ -1,0 +1,31 @@
+{
+    "errorMessages": null,
+    "response": {
+        "data": {
+            "ucl": 10,
+            "target": 20,
+            "lcl": 40,
+            "details": {
+                "totalCount": 2,
+                "results": [
+                    {
+                        "cartonNo": 123123,
+                        "temperatureResult": 30
+                    },
+                    {
+                        "cartonNo": 123123,
+                        "temperatureResult": 0
+                    },
+					{
+                        "cartonNo": 123123,
+                        "temperatureResult": 20
+                    },
+                    {
+                        "cartonNo": 123123,
+                        "temperatureResult": 10
+                    }
+                ]
+            }
+        }
+    }
+}

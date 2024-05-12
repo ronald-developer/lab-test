@@ -1,0 +1,77 @@
+{
+    "errorMessages": null,
+    "response": {
+        "data": {
+            "stemInTipsTestLastResult": {
+                "lastResult": 0,
+                "secondTestResult": 0,
+                "thirdTestResult": 0,
+                "lastResults": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "objInTipsTestLastResult": {
+                "lastResult": 0,
+                "secondTestResult": 0,
+                "thirdTestResult": 0,
+                "lastResults": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "leafPerKiloTestLastResult": {
+                "lastResult": 0,
+                "secondTestResult": 0,
+                "thirdTestResult": 0,
+                "lastResults": [
+                    800,
+                    1000,
+                    300
+                ]
+            },
+            "laminaRatioTestLastResult": {
+                "lastResult": 0,
+                "secondTestResult": 0,
+                "thirdTestResult": 0,
+                "lastResults": [
+                    60,
+                    50,
+                    66.67
+                ]
+            },
+            "stemRatioTestLastResult": {
+                "lastResult": 0,
+                "secondTestResult": 0,
+                "thirdTestResult": 0,
+                "lastResults": [
+                    40,
+                    50,
+                    33.33
+                ]
+            },
+            "moisturePriorRedryerTestLastResult": {
+                "lastResult": 0,
+                "secondTestResult": 0,
+                "thirdTestResult": 0,
+                "lastResults": [
+                    0,
+                    0,
+                    8
+                ]
+            },
+            "flagOnStemTestLastResult": {
+                "lastResult": 0,
+                "secondTestResult": 0,
+                "thirdTestResult": 0,
+                "lastResults": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        }
+    }
+}

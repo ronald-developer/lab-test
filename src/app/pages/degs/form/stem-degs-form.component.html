@@ -1,0 +1,59 @@
+<div class="card content-body">
+	<div class="card-body pt-5 pb-0 px-5">
+		<div class="d-flex">
+			<div class="col-12">
+				<div [formGroup]="formGroup" class="row g-3">
+					<div>
+						<h5 class="mb-0">Test input values</h5>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-12" *ngIf="formGroup.controls.stemSampleWeight as ctrl">
+						<input appNumberDecimal type="text" class="form-control" [class.is-invalid]="ctrl.invalid && ctrl.touched" formControlName="stemSampleWeight">
+						<label>Stem sample weight</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.stemObj as ctrl">
+						<input appNumberDecimal type="text" class="form-control" [class.is-invalid]="ctrl.invalid && ctrl.touched" formControlName="stemObj">
+						<label>Stem obj</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.stemSevenMesh as ctrl">
+						<input appNumberDecimal type="text" class="form-control" [class.is-invalid]="ctrl.invalid && ctrl.touched" formControlName="stemSevenMesh">
+						<label>Stem seven mesh</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.stemTwelveMesh as ctrl">
+						<input appNumberDecimal type="text" class="form-control" [class.is-invalid]="ctrl.invalid && ctrl.touched" formControlName="stemTwelveMesh">
+						<label>Stem twelve mesh</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+					<div class="field-wrapper form-floating col-md-6" *ngIf="formGroup.controls.stemPan as ctrl">
+						<input appNumberDecimal type="text" class="form-control" [class.is-invalid]="ctrl.invalid && ctrl.touched" formControlName="stemPan">
+						<label>Stem pan</label>
+						<ng-container *ngIf="ctrl.invalid && ctrl.touched">
+							<span class="text-danger" *ngIf="ctrl?.errors?.required">Required!</span>
+						</ng-container>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="d-flex justify-content-start my-5">
+			<button class="btn btn-primary btn-sm" (click)="save()">{{isEdit? 'Update':'Create'}}</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,2163 @@
+{
+    "errorMessages": null,
+    "response": {
+        "data": [
+            {
+                "id": 10476,
+                "displayNo": "2022-108-T",
+                "motherGradeId": 1198,
+                "motherGradeCode": "S1CUA/BLL",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2217,
+                        "packingGradeCode": "S1CUA/BLL",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    }
+                ]
+            },
+            {
+                "id": 10503,
+                "displayNo": "2022-122-T",
+                "motherGradeId": 1203,
+                "motherGradeCode": "CRO",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2222,
+                        "packingGradeCode": "CRO",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 1032,
+                        "packingGradeCode": "LLS",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11549,
+                "displayNo": "2022-6-C",
+                "motherGradeId": 1217,
+                "motherGradeCode": "BLROC",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2235,
+                        "packingGradeCode": "BLROC",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2237,
+                        "packingGradeCode": "BF816",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11562,
+                "displayNo": "2023-4-T",
+                "motherGradeId": 30,
+                "motherGradeCode": "RECONCILIATION",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2038,
+                        "packingGradeCode": "X2OF",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    }
+                ]
+            },
+            {
+                "id": 11605,
+                "displayNo": "2023-16-JTI",
+                "motherGradeId": 30,
+                "motherGradeCode": "RECONCILIATION",
+                "byProducts": [
+                    {
+                        "packingGradeId": 1,
+                        "packingGradeCode": "ZMBLS2S",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    }
+                ]
+            },
+            {
+                "id": 11627,
+                "displayNo": "2023-2-TTC",
+                "motherGradeId": 1235,
+                "motherGradeCode": "BB2",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2258,
+                        "packingGradeCode": "BB2",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2237,
+                        "packingGradeCode": "BF816",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11669,
+                "displayNo": "2023-29-JTI",
+                "motherGradeId": 30,
+                "motherGradeCode": "RECONCILIATION",
+                "byProducts": [
+                    {
+                        "packingGradeId": 1,
+                        "packingGradeCode": "ZMBLS2S",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    }
+                ]
+            },
+            {
+                "id": 11695,
+                "displayNo": "2023-36-A",
+                "motherGradeId": 30,
+                "motherGradeCode": "RECONCILIATION",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2075,
+                        "packingGradeCode": "ZFCX2L",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    }
+                ]
+            },
+            {
+                "id": 11717,
+                "displayNo": "2023-84-T",
+                "motherGradeId": 1264,
+                "motherGradeCode": "L1LF-YN-2",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2287,
+                        "packingGradeCode": "L1LF-YN-2",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11740,
+                "displayNo": "2023-94-T",
+                "motherGradeId": 1041,
+                "motherGradeCode": "X3OF",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2045,
+                        "packingGradeCode": "X3OF",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11741,
+                "displayNo": "2023-95-T",
+                "motherGradeId": 1088,
+                "motherGradeCode": "L1OL-YN",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2098,
+                        "packingGradeCode": "L1OL-YN",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11744,
+                "displayNo": "2023-98-T",
+                "motherGradeId": 1273,
+                "motherGradeCode": "C2O-BLL",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2296,
+                        "packingGradeCode": "C2O/BLL",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    }
+                ]
+            },
+            {
+                "id": 11747,
+                "displayNo": "2023-101-T",
+                "motherGradeId": 1277,
+                "motherGradeCode": "C2L/SG",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2300,
+                        "packingGradeCode": "C2L/SG",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 2112,
+                        "packingGradeCode": "FS2",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11749,
+                "displayNo": "2023-103-T",
+                "motherGradeId": 1279,
+                "motherGradeCode": "LC2L-SG",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2302,
+                        "packingGradeCode": "LC2L-SG",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2246,
+                        "packingGradeCode": "LLS-B",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 2112,
+                        "packingGradeCode": "FS2",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11756,
+                "displayNo": "2023-106-T",
+                "motherGradeId": 1205,
+                "motherGradeCode": "BRO",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2224,
+                        "packingGradeCode": "BRO",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2246,
+                        "packingGradeCode": "LLS-B",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11761,
+                "displayNo": "2023-109-T",
+                "motherGradeId": 1279,
+                "motherGradeCode": "LC2L-SG",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2302,
+                        "packingGradeCode": "LC2L-SG",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2246,
+                        "packingGradeCode": "LLS-B",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    }
+                ]
+            },
+            {
+                "id": 11762,
+                "displayNo": "2023-49-A",
+                "motherGradeId": 1255,
+                "motherGradeCode": "FZMDDO-1",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2278,
+                        "packingGradeCode": "FZMDDO-1",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2261,
+                        "packingGradeCode": "FCL",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 2240,
+                        "packingGradeCode": "FS832",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11781,
+                "displayNo": "2023-114-T",
+                "motherGradeId": 1290,
+                "motherGradeCode": "XOF",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2313,
+                        "packingGradeCode": "XOF",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11782,
+                "displayNo": "2023-115-T",
+                "motherGradeId": 1143,
+                "motherGradeCode": "O2M",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2156,
+                        "packingGradeCode": "O2M",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11783,
+                "displayNo": "2023-116-T",
+                "motherGradeId": 1144,
+                "motherGradeCode": "X2M",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2157,
+                        "packingGradeCode": "X2M",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11784,
+                "displayNo": "2023-117-T",
+                "motherGradeId": 1169,
+                "motherGradeCode": "O2XM",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2184,
+                        "packingGradeCode": "O2XM",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11789,
+                "displayNo": "2023-122-T",
+                "motherGradeId": 1090,
+                "motherGradeCode": "BO3",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2099,
+                        "packingGradeCode": "BO3",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2246,
+                        "packingGradeCode": "LLS-B",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11816,
+                "displayNo": "2023-135-T",
+                "motherGradeId": 1071,
+                "motherGradeCode": "L5O",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2077,
+                        "packingGradeCode": "L5O",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11833,
+                "displayNo": "2023-141-T",
+                "motherGradeId": 1296,
+                "motherGradeCode": "ROC-X",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2319,
+                        "packingGradeCode": "ROC-X",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2111,
+                        "packingGradeCode": "BS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11837,
+                "displayNo": "2023-145-T",
+                "motherGradeId": 1096,
+                "motherGradeCode": "L1O-GX",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2107,
+                        "packingGradeCode": "L1O-GX",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11839,
+                "displayNo": "2023-147-T",
+                "motherGradeId": 1087,
+                "motherGradeCode": "L1LF-YN",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2096,
+                        "packingGradeCode": "L1LF-YN",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11840,
+                "displayNo": "2023-148-T",
+                "motherGradeId": 1078,
+                "motherGradeCode": "L1OL-3",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2087,
+                        "packingGradeCode": "L1OL-3",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11850,
+                "displayNo": "2023-12-TTC",
+                "motherGradeId": 1299,
+                "motherGradeCode": "ZB-BROC",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2322,
+                        "packingGradeCode": "ZB-BROC",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2237,
+                        "packingGradeCode": "BF816",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2325,
+                        "packingGradeCode": "BMLST",
+                        "productTypeId": 6,
+                        "productTypeCode": "MLST"
+                    }
+                ]
+            },
+            {
+                "id": 11853,
+                "displayNo": "2023-155-T",
+                "motherGradeId": 1079,
+                "motherGradeCode": "L1OLF-HN",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2088,
+                        "packingGradeCode": "L1OLF-HN",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11874,
+                "displayNo": "2023-15-TTC",
+                "motherGradeId": 1306,
+                "motherGradeCode": "ZB-BCROC",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2330,
+                        "packingGradeCode": "ZB-BCROC",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2237,
+                        "packingGradeCode": "BF816",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2331,
+                        "packingGradeCode": "BF816-1",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11878,
+                "displayNo": "2023-165-T",
+                "motherGradeId": 1088,
+                "motherGradeCode": "L1OL-YN",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2098,
+                        "packingGradeCode": "L1OL-YN",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11883,
+                "displayNo": "2023-18-TTC",
+                "motherGradeId": 30,
+                "motherGradeCode": "RECONCILIATION",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2330,
+                        "packingGradeCode": "ZB-BCROC",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    }
+                ]
+            },
+            {
+                "id": 11897,
+                "displayNo": "2023-74-JTI",
+                "motherGradeId": 10,
+                "motherGradeCode": "ZMFLD3S",
+                "byProducts": [
+                    {
+                        "packingGradeId": 10,
+                        "packingGradeCode": "ZMFLD3S",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 27,
+                        "packingGradeCode": "ZZMSFLL",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 29,
+                        "packingGradeCode": "ZZMSFMS",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 26,
+                        "packingGradeCode": "ZZMXF",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11902,
+                "displayNo": "2023-170-T",
+                "motherGradeId": 1237,
+                "motherGradeCode": "L1L-GX",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2259,
+                        "packingGradeCode": "L1L-GX",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11903,
+                "displayNo": "2023-171-T",
+                "motherGradeId": 1096,
+                "motherGradeCode": "L1O-GX",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2107,
+                        "packingGradeCode": "L1O-GX",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11905,
+                "displayNo": "2023-80-A",
+                "motherGradeId": 1310,
+                "motherGradeCode": "23ZFXCO",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2336,
+                        "packingGradeCode": "23ZFXCO",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2261,
+                        "packingGradeCode": "FCL",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 2240,
+                        "packingGradeCode": "FS832",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11906,
+                "displayNo": "2023-81-A",
+                "motherGradeId": 1311,
+                "motherGradeCode": "23ZFBCL",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2337,
+                        "packingGradeCode": "23ZFBCL",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2260,
+                        "packingGradeCode": "FLL",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 2240,
+                        "packingGradeCode": "FS832",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2261,
+                        "packingGradeCode": "FCL",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    }
+                ]
+            },
+            {
+                "id": 11907,
+                "displayNo": "2023-82-A",
+                "motherGradeId": 1312,
+                "motherGradeCode": "23ZFBBO",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2338,
+                        "packingGradeCode": "23ZFBBO",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2260,
+                        "packingGradeCode": "FLL",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 2240,
+                        "packingGradeCode": "FS832",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11908,
+                "displayNo": "2023-83-A",
+                "motherGradeId": 1313,
+                "motherGradeCode": "23ZFROC",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2339,
+                        "packingGradeCode": "23ZFROC",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2261,
+                        "packingGradeCode": "FCL",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 2240,
+                        "packingGradeCode": "FS832",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11909,
+                "displayNo": "2023-172-T",
+                "motherGradeId": 1080,
+                "motherGradeCode": "L1-HE",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2089,
+                        "packingGradeCode": "L1-HE",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11910,
+                "displayNo": "2023-173-T",
+                "motherGradeId": 1082,
+                "motherGradeCode": "L1M",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2091,
+                        "packingGradeCode": "L1M",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11913,
+                "displayNo": "2023-176-T",
+                "motherGradeId": 1162,
+                "motherGradeCode": "L1OF-HN",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2175,
+                        "packingGradeCode": "L1OF-HN",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11914,
+                "displayNo": "2023-177-T",
+                "motherGradeId": 1081,
+                "motherGradeCode": "L1O-GD",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2090,
+                        "packingGradeCode": "L1O-GD",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11917,
+                "displayNo": "2023-19-TTC",
+                "motherGradeId": 1300,
+                "motherGradeCode": "ZM-ZFLOC",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2323,
+                        "packingGradeCode": "ZM-ZFLOC",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 1032,
+                        "packingGradeCode": "LLS",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 2237,
+                        "packingGradeCode": "BF816",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2240,
+                        "packingGradeCode": "FS832",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2352,
+                        "packingGradeCode": "FMLST",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    }
+                ]
+            },
+            {
+                "id": 11920,
+                "displayNo": "2023-22-TTC",
+                "motherGradeId": 1306,
+                "motherGradeCode": "ZB-BCROC",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2330,
+                        "packingGradeCode": "ZB-BCROC",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2325,
+                        "packingGradeCode": "BMLST",
+                        "productTypeId": 5,
+                        "productTypeCode": "MST"
+                    },
+                    {
+                        "packingGradeId": 2354,
+                        "packingGradeCode": "BF832",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11922,
+                "displayNo": "2023-178-T",
+                "motherGradeId": 1263,
+                "motherGradeCode": "S3W",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2286,
+                        "packingGradeCode": "S3W",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11923,
+                "displayNo": "2023-179-T",
+                "motherGradeId": 1079,
+                "motherGradeCode": "L1OLF-HN",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2088,
+                        "packingGradeCode": "L1OLF-HN",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11924,
+                "displayNo": "2023-180-T",
+                "motherGradeId": 1071,
+                "motherGradeCode": "L5O",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2077,
+                        "packingGradeCode": "L5O",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11925,
+                "displayNo": "2023-181-T",
+                "motherGradeId": 1041,
+                "motherGradeCode": "X3OF",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2045,
+                        "packingGradeCode": "X3OF",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11926,
+                "displayNo": "2023-182-T",
+                "motherGradeId": 1185,
+                "motherGradeCode": "LOFT-HN",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2203,
+                        "packingGradeCode": "LOFT-HN",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2244,
+                        "packingGradeCode": "LLS-C ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11927,
+                "displayNo": "2023-183-T",
+                "motherGradeId": 1290,
+                "motherGradeCode": "XOF",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2313,
+                        "packingGradeCode": "XOF",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11928,
+                "displayNo": "2023-184-T",
+                "motherGradeId": 1227,
+                "motherGradeCode": "ZATO1",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2249,
+                        "packingGradeCode": "ZATO1",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11929,
+                "displayNo": "2023-185-T",
+                "motherGradeId": 1223,
+                "motherGradeCode": "X2OL",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2243,
+                        "packingGradeCode": "X2OL",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11930,
+                "displayNo": "2023-186-T",
+                "motherGradeId": 1225,
+                "motherGradeCode": "B3F",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2247,
+                        "packingGradeCode": "B3F",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2246,
+                        "packingGradeCode": "LLS-B",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11931,
+                "displayNo": "2023-187-T",
+                "motherGradeId": 1090,
+                "motherGradeCode": "BO3",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2099,
+                        "packingGradeCode": "BO3",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2246,
+                        "packingGradeCode": "LLS-B",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11932,
+                "displayNo": "2023-188-T",
+                "motherGradeId": 1030,
+                "motherGradeCode": "B3O",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2078,
+                        "packingGradeCode": "B3O",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2246,
+                        "packingGradeCode": "LLS-B",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11933,
+                "displayNo": "2023-189-T",
+                "motherGradeId": 1150,
+                "motherGradeCode": "ZATO3",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2163,
+                        "packingGradeCode": "ZATO3",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2245,
+                        "packingGradeCode": "LLS-X ",
+                        "productTypeId": 2,
+                        "productTypeCode": "LST"
+                    },
+                    {
+                        "packingGradeId": 1033,
+                        "packingGradeCode": "SST",
+                        "productTypeId": 3,
+                        "productTypeCode": "SST"
+                    },
+                    {
+                        "packingGradeId": 1034,
+                        "packingGradeCode": "FS8",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    },
+                    {
+                        "packingGradeId": 2040,
+                        "packingGradeCode": "FS16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11934,
+                "displayNo": "2023-190-T",
+                "motherGradeId": 1112,
+                "motherGradeCode": "L5R",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2124,
+                        "packingGradeCode": "L5R",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    }
+                ]
+            },
+            {
+                "id": 11935,
+                "displayNo": "2023-191-T",
+                "motherGradeId": 1319,
+                "motherGradeCode": "QF-23",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2355,
+                        "packingGradeCode": "QF-23",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    }
+                ]
+            },
+            {
+                "id": 11936,
+                "displayNo": "2023-24-TTC",
+                "motherGradeId": 1299,
+                "motherGradeCode": "ZB-BROC",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2322,
+                        "packingGradeCode": "ZB-BROC",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2325,
+                        "packingGradeCode": "BMLST",
+                        "productTypeId": 5,
+                        "productTypeCode": "MST"
+                    },
+                    {
+                        "packingGradeId": 2354,
+                        "packingGradeCode": "BF832",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11937,
+                "displayNo": "2023-24-TTC",
+                "motherGradeId": 1299,
+                "motherGradeCode": "ZB-BROC",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2322,
+                        "packingGradeCode": "ZB-BROC",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2325,
+                        "packingGradeCode": "BMLST",
+                        "productTypeId": 5,
+                        "productTypeCode": "MST"
+                    }
+                ]
+            },
+            {
+                "id": 11938,
+                "displayNo": "2023-192-T",
+                "motherGradeId": 1320,
+                "motherGradeCode": "MDY-PM-23",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2356,
+                        "packingGradeCode": "MDY-PM-23",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    }
+                ]
+            },
+            {
+                "id": 11939,
+                "displayNo": "2023-1-TPL",
+                "motherGradeId": 1320,
+                "motherGradeCode": "MDY-PM-23",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2356,
+                        "packingGradeCode": "MDY-PM-23",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2357,
+                        "packingGradeCode": "PMFS8-16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11940,
+                "displayNo": "2023-25-TTC",
+                "motherGradeId": 1306,
+                "motherGradeCode": "ZB-BCROC",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2330,
+                        "packingGradeCode": "ZB-BCROC",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2325,
+                        "packingGradeCode": "BMLST",
+                        "productTypeId": 5,
+                        "productTypeCode": "MST"
+                    },
+                    {
+                        "packingGradeId": 2354,
+                        "packingGradeCode": "BF832",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11942,
+                "displayNo": "2024-2-TTC",
+                "motherGradeId": 1317,
+                "motherGradeCode": "M12T",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2353,
+                        "packingGradeCode": "M12T",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2325,
+                        "packingGradeCode": "BMLST",
+                        "productTypeId": 5,
+                        "productTypeCode": "MST"
+                    },
+                    {
+                        "packingGradeId": 2354,
+                        "packingGradeCode": "BF832",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11943,
+                "displayNo": "2024-3-TTC",
+                "motherGradeId": 1322,
+                "motherGradeCode": "ZB-BB5",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2358,
+                        "packingGradeCode": "ZB-BB5",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2237,
+                        "packingGradeCode": "BF816",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11944,
+                "displayNo": "2024-1-TPL",
+                "motherGradeId": 1320,
+                "motherGradeCode": "MDY-PM-23",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2356,
+                        "packingGradeCode": "MDY-PM-23",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2357,
+                        "packingGradeCode": "PMFS8-16",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11945,
+                "displayNo": "2024-4-TTC",
+                "motherGradeId": 1300,
+                "motherGradeCode": "ZM-ZFLOC",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2323,
+                        "packingGradeCode": "ZM-ZFLOC",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    },
+                    {
+                        "packingGradeId": 2352,
+                        "packingGradeCode": "FMLST",
+                        "productTypeId": 5,
+                        "productTypeCode": "MST"
+                    },
+                    {
+                        "packingGradeId": 2240,
+                        "packingGradeCode": "FS832",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11948,
+                "displayNo": "2024-5-TTC",
+                "motherGradeId": 1326,
+                "motherGradeCode": "MDY-ZFLOC",
+                "byProducts": [
+                    {
+                        "packingGradeId": 2362,
+                        "packingGradeCode": "MDY-ZFLOC",
+                        "productTypeId": 1,
+                        "productTypeCode": "LAM"
+                    }
+                ]
+            },
+            {
+                "id": 11949,
+                "displayNo": "2024-5-TTC",
+                "motherGradeId": 30,
+                "motherGradeCode": "RECONCILIATION",
+                "byProducts": [
+                    {
+                        "packingGradeId": 1032,
+                        "packingGradeCode": "LLS",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11950,
+                "displayNo": "2024-5-TTC",
+                "motherGradeId": 30,
+                "motherGradeCode": "RECONCILIATION",
+                "byProducts": [
+                    {
+                        "packingGradeId": 1032,
+                        "packingGradeCode": "LLS",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11951,
+                "displayNo": "2024-6-TTC",
+                "motherGradeId": 30,
+                "motherGradeCode": "RECONCILIATION",
+                "byProducts": [
+                    {
+                        "packingGradeId": 1032,
+                        "packingGradeCode": "LLS",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            },
+            {
+                "id": 11952,
+                "displayNo": "2024-7-TTC",
+                "motherGradeId": 30,
+                "motherGradeCode": "RECONCILIATION",
+                "byProducts": [
+                    {
+                        "packingGradeId": 1032,
+                        "packingGradeCode": "LLS",
+                        "productTypeId": 4,
+                        "productTypeCode": "FINES"
+                    }
+                ]
+            }
+        ]
+    }
+}

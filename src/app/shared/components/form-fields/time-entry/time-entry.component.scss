@@ -1,0 +1,18 @@
+.time-picker{
+    right: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    i.clock-icon{
+        font-size: 20px;
+    }
+}
+
+:host ::ng-deep timepicker{
+	table{
+		width: 100%;
+	}
+}

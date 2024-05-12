@@ -1,0 +1,10 @@
+
+<ng-template #formTemplateRef>
+	<app-fines-form [reset]="reset" (formChangeEventResult)="save($event)"></app-fines-form>
+  </ng-template>
+  <ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+  <app-create-edit-template
+	[contentTitle]="'Create fines test'"
+	[contentBodyTemplateRef]="formTemplateRef">
+  </app-create-edit-template>
+  <app-fines-test-result></app-fines-test-result>

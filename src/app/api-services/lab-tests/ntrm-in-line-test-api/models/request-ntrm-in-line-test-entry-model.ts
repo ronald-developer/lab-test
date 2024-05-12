@@ -1,0 +1,30 @@
+export interface RequestNtrmInLineTestEntryModel {
+	id: string;
+	operationOrderId: number;
+	motherGradeId: number;
+	entryDate: Date;
+	productTypeId: number;
+	packingGradeId: number;
+	shiftType: number;
+	testUnitOfMeasure: number;
+	weed: number;
+	wood: number;
+	fibres: number;
+	paper: number;
+	feathers: number;
+	insects: number;
+	otherOrganic: number;
+	otherOrganicType: string;
+	rocks: number;
+	metals: number;
+	otherInorganicNonSynthetic: number;
+	otherInorganicNonSyntheticType: string;
+	nylon: number;
+	rubber: number;
+	foam: number;
+	plastic: number;
+	otherInorganicSynthetic: number;
+	otherInorganicSyntheticType: string;
+	ntrmInLineTestId: string;
+	ntrmLocationId: number;
+}

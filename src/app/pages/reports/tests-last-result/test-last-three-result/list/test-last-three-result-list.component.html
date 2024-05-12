@@ -1,0 +1,120 @@
+<div>
+	<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+	<div class="card-header border-0 pt-5">
+		<div class="card-toolbar">
+			<app-portlet-filter
+				[form]="formFilter"
+				[pinned]="true"
+				(valueChanged)="onFilterCriteriaChanged($event)"
+				(refresh)="search()"
+				(search)="search()">
+			</app-portlet-filter>
+		</div>
+	</div>
+
+	<app-table
+		[enableNavPagination]="enableNavPagination"
+		[tableRowsTemplateRef]="tableRowsTemplate"
+		[tableHeaderRowTemplateRef]="tableHeaderRowTemplate"
+		[currentPage]="1"
+		[disablePagination]="true"
+		(pageChanged)="search($event)">
+	</app-table>
+
+	<ng-template #tableHeaderRowTemplate>
+		<tr class="fw-bolder text-muted">
+			<th class="min-w-110px">Test type</th>
+			<th class="min-w-60px" *ngFor="let column of columns">Last result #{{column}}</th>
+		</tr>
+	</ng-template>
+
+	<ng-template #tableRowsTemplate>
+		<ng-container *ngIf="dataSource|async as source">
+			<tr>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						Stem in tips
+					</span>
+				</td>
+				<td *ngFor="let val of source.stemInTipsTestLastResult.lastResults">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{val}}
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						Obj in tips
+					</span>
+				</td>
+				<td *ngFor="let val of source.objInTipsTestLastResult.lastResults">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{val}}
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						Leaf per kilo
+					</span>
+				</td>
+				<td *ngFor="let val of source.leafPerKiloTestLastResult.lastResults">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{val}}
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						Lamina ratio
+					</span>
+				</td>
+				<td *ngFor="let val of source.laminaRatioTestLastResult.lastResults">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{val}}
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						Stem ratio
+					</span>
+				</td>
+				<td *ngFor="let val of source.stemRatioTestLastResult.lastResults">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{val}}
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						Moisture prior redryer
+					</span>
+				</td>
+				<td *ngFor="let val of source.moisturePriorRedryerTestLastResult.lastResults">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{val}}
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						Flag on stem
+					</span>
+				</td>
+				<td *ngFor="let val of source.flagOnStemTestLastResult.lastResults">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{val}}
+					</span>
+				</td>
+			</tr>
+		</ng-container>
+
+	</ng-template>
+</div>

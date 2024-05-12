@@ -1,0 +1,9 @@
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<ng-template #formTemplateRef>
+  <app-tips-form [reset]="reset" (formChangeEventResult)="save($event)"></app-tips-form>
+</ng-template>
+<app-create-edit-template
+  [contentTitle]="'Create tips test'"
+  [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>
+<app-tips-test-result></app-tips-test-result>

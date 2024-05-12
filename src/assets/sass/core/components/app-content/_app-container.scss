@@ -1,0 +1,23 @@
+#kt_app_content_container >*{
+    width: 100%;
+    .page-content-container{
+        .content-header{
+            margin-bottom: 1px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+
+            .content-header-title{
+                flex-grow: 1;
+                margin-bottom: 0.25rem;
+                align-self: center;
+                font-weight: 700;
+            }
+        }
+        .content-body{
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    }
+}
+
+// var(--kt-primary)

@@ -1,0 +1,53 @@
+<div class="d-flex">
+    <div class="col-12" *ngIf="formFieldOrientation==='vertical'">
+        <div class="row g-3">
+            <ng-container *ngIf="formFilters">
+                <app-operation-no-option [formFilters]="formFilters"></app-operation-no-option>
+                <app-operation-no class="col-md-12" [formFilters]="formFilters"></app-operation-no>
+                <app-mother-grade class="col-md-12" [formFilters]="formFilters"></app-mother-grade>
+                <app-date-option [formFilters]="formFilters"></app-date-option>
+                <app-date  class="col-md-12" [formFilters]="formFilters"></app-date>
+                <app-packing-grade class="col-md-12" [formFilters]="formFilters"></app-packing-grade>
+                <app-packing-grade-by-product class="col-md-12" [formFilters]="formFilters"></app-packing-grade-by-product>
+				<app-shift-type class="col-md-12" [formFilters]="formFilters"></app-shift-type>
+                <app-carton-no class="col-md-12" [formFilters]="formFilters"></app-carton-no>
+                <app-charger-type class="col-md-12" [formFilters]="formFilters"></app-charger-type>
+                <app-screen-type class="col-md-12" [formFilters]="formFilters"></app-screen-type>
+				<app-test-type class="col-md-12" [formFilters]="formFilters"></app-test-type>
+				<app-position-type class="col-md-12" [formFilters]="formFilters"></app-position-type>
+				<app-is-non-compliant class="col-md-12" [formFilters]="formFilters"></app-is-non-compliant>
+				<app-product-type class="col-md-12" [formFilters]="formFilters"></app-product-type>
+				<app-product-type-by-product class="col-md-12" [formFilters]="formFilters"></app-product-type-by-product>
+				<app-page-size class="col-md-12" [formFilters]="formFilters"></app-page-size>
+				<app-container-no class="col-md-12" [formFilters]="formFilters"></app-container-no>
+				<app-sample-type class="col-md-12" [formFilters]="formFilters"></app-sample-type>
+            </ng-container>
+        </div>
+    </div>
+
+	<div class="flex-grow-1 d-flex gap-2 flex-wrap" *ngIf="formFieldOrientation==='horizontal' && formFilters">
+		<ng-container>
+			<app-operation-no-option [formFilters]="formFilters"></app-operation-no-option>
+			<app-operation-no class="flex-grow-1" [formFilters]="formFilters"></app-operation-no>
+			<app-mother-grade class="flex-grow-1" [formFilters]="formFilters"></app-mother-grade>
+			<app-date-option [formFilters]="formFilters"></app-date-option>
+			<app-date  class="flex-grow-1" [formFilters]="formFilters"></app-date>
+			<app-packing-grade class="flex-grow-1" [formFilters]="formFilters"></app-packing-grade>
+			<app-packing-grade-by-product class="flex-grow-1" [formFilters]="formFilters"></app-packing-grade-by-product>
+			<app-shift-type class="flex-grow-1" [formFilters]="formFilters"></app-shift-type>
+			<app-carton-no class="flex-grow-1" [formFilters]="formFilters"></app-carton-no>
+			<app-charger-type class="flex-grow-1" [formFilters]="formFilters"></app-charger-type>
+			<app-screen-type class="flex-grow-1" [formFilters]="formFilters"></app-screen-type>
+			<app-test-type class="flex-grow-1" [formFilters]="formFilters"></app-test-type>
+			<app-position-type class="flex-grow-1" [formFilters]="formFilters"></app-position-type>
+			<app-is-non-compliant class="flex-grow-1" [formFilters]="formFilters"></app-is-non-compliant>
+			<app-product-type class="flex-grow-1" [formFilters]="formFilters"></app-product-type>
+			<app-product-type-by-product class="flex-grow-1" [formFilters]="formFilters"></app-product-type-by-product>
+			<app-page-size class="flex-grow-1" [formFilters]="formFilters"></app-page-size>
+			<app-container-no class="flex-grow-1" [formFilters]="formFilters"></app-container-no>
+			<app-sample-type class="flex-grow-1" [formFilters]="formFilters"></app-sample-type>
+
+		</ng-container>
+	</div>
+
+</div>

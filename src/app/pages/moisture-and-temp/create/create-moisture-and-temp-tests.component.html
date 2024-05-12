@@ -1,0 +1,8 @@
+<ng-template #formTemplateRef>
+	<app-moisture-and-temp-form (formChangeEventResult)="save($event)"></app-moisture-and-temp-form>
+  </ng-template>
+  <ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+  <app-create-edit-template
+	[contentTitle]="'Create moisture and temp test batch'"
+	[contentBodyTemplateRef]="formTemplateRef">
+  </app-create-edit-template>

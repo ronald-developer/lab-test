@@ -1,0 +1,25 @@
+{
+    "errorMessages": null,
+    "response": {
+        "data": {
+            "totalCount": 3,
+            "results": [
+                {
+                    "id": "0e24a8ff-787a-4a4b-ee45-08dc5f8dee88",
+                    "name": "Chocolate",
+                    "isActive": true
+                },
+                {
+                    "id": "6d7ae0d5-41fa-48ff-ee44-08dc5f8dee88",
+                    "name": "Milk",
+                    "isActive": true
+                },
+                {
+                    "id": "56cfee02-55a1-4477-6afd-08dc6353e760",
+                    "name": "Mocha",
+                    "isActive": true
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,31 @@
+export interface ResponseDegsTestDetailReportResult {
+	id: string;
+	entryDate: string;
+	entryDateString: string;
+	entryDateTimeString: string;
+	shiftType: number;
+	shiftTypeTitle: string;
+	operationOrderId: number;
+	operationOrderDisplayNo: string;
+	motherGradeId: number;
+	motherGradeCode: string;
+	cartonNo: number;
+	testIndex: number;
+	isNonCompliant: boolean;
+	isNonCompliantStr: string;
+	pctOverOne: number;
+	pctOverHalf: number;
+	pctTotalOverHalf: number;
+	pctOverQuarter: number;
+	pctTotalOverQuarter: number;
+	pctOverEighth: number;
+	pctDegsPan: number;
+	pctThruQuarter: number;
+	pctStemObj: number;
+	pctStemSevenMesh: number;
+	pctStemTwelveMesh: number;
+	pctStemSevenTwelveMesh: number;
+	pctStemPan: number;
+	pctTotalStem: number;
+	pctTotalHandStripStem: number;
+}

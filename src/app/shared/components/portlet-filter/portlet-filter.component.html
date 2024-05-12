@@ -1,0 +1,79 @@
+<ng-template #titleTemplate>
+    <div class="filter-container-title menu-content fs-6 text-dark fw-bolder px-1 py-1 flex-grow-1 align-self-center">
+        {{tableFilterTitle}} <span *ngIf="tableFilterTitle">(Filter criteria)</span>
+    </div>
+</ng-template>
+
+<!-- filter criteria fields starts -->
+<ng-template #filterCriteriaTemplate>
+    <app-portlet-filter-criteria [formFilters]="formFilters" [formFieldOrientation]="formFieldOrientation"></app-portlet-filter-criteria>
+    <ng-container *ngTemplateOutlet="filterCriteriaTemplateRef"></ng-container>
+    <div class="d-flex justify-content-end" *ngIf="!noSearchButton">
+        <div class="actions mt-3">
+            <button type="submit" class="btn btn-primary btn-sm" (click)="onSearch()">{{filterButtonLabel}}</button>
+        </div>
+    </div>
+</ng-template>
+<!-- filter criteria fields starts -->
+
+<div class="filter-portlet-container bg-white" #parentContainer >
+    <div class="p-3 d-flex" *ngIf="pinned">
+        <ng-container *ngTemplateOutlet="titleTemplate"></ng-container>
+        <button *ngIf="!noRefreshButton" class= "btn btn-color-primary btn-active-light-primary px-3" (click)="onRefresh()">
+            <i class="bi bi-arrow-clockwise"></i>
+            Refresh
+        </button>
+        <button class="btn btn-color-primary btn-active-light-primary px-4" role="button" (click)="pin()" title="Unpin">
+            <i class="bi bi-pin-fill text-primary"></i>
+        </button>
+    </div>
+
+    <div class="separator border-primary mb-1 opacity-25" *ngIf="pinned"></div>
+
+    <div class="card-header border-0 d-flex px-4 py-3">
+        <div class="filter-criteria-container flex-grow-1 align-self-center">
+            <span class="flex-grow-1 card-label fw-bolder fs-3 mb-1 align-self-center">{{tableFilterTitle}}</span>
+            <!-- pinned filter starts-->
+            <ng-container *ngIf="pinned">
+                <ng-container *ngTemplateOutlet="filterCriteriaTemplate"></ng-container>
+            </ng-container>
+            <!-- pinned filter ends-->
+        </div>
+
+        <!-- popup filter starts -->
+        <div class="card-toolbar" [hidden]="pinned">
+            <div class="d-flex">
+                <button *ngIf="!noRefreshButton" class="btn btn-color-primary btn-active-light-primary px-3" (click)="onRefresh()">
+                    <i class="bi bi-arrow-clockwise"></i>
+                    Refresh
+                </button>
+                <button
+                    #menuElement
+                    title="Filter criteria"
+                    type="button"
+                    class="btn btn-icon btn-color-primary btn-active-light-primary"
+                    data-kt-menu-static="true"
+                    data-kt-menu-trigger="click"
+                    data-kt-menu-placement="left-start">
+                    <span class="d-flex gap-2">
+                        <i class="bi bi-funnel-fill align-self-center px-2"></i>
+                    </span>
+                </button>
+                <app-portlet-filter-popup
+                    [filterCriteriaTemplateRef]="filterCriteriaTemplate"
+                    appMenuKtListener
+                    [parentContainerElement]="parentContainer">
+                    <ng-container *ngTemplateOutlet="titleTemplate"></ng-container>
+                    <span role="button" class="toggle-btn d-flex gap-3">
+                        <i class="bi bi-pin-angle-fill align-self-center text-info" title="Pin to container" (click)="pin()"></i>
+                        <i class="bi bi-x fs-2 align-self-center" (click)="close()"></i>
+                    </span>
+
+                </app-portlet-filter-popup>
+            </div>
+        </div>
+        <!-- popup filter ends-->
+    </div>
+
+</div>
+<div class="separator border-primary mb-1 opacity-25"></div>

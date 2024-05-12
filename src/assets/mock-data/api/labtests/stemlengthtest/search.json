@@ -1,0 +1,64 @@
+{
+    "errorMessages": null,
+    "response": {
+        "data": {
+            "totalCount": 3,
+            "results": [
+                {
+                    "packingGradeId": 2038,
+                    "packingGradeCode": "X2OF",
+                    "id": "c92ae705-71ac-4ef5-3fda-08dc552b2a30",
+                    "entryDate": "2024-04-04T01:02:00",
+                    "entryDateString": "04/04/2024",
+                    "entryDateTimeString": "01:02:00",
+                    "shiftType": 1,
+                    "shiftTypeTitle": "Night",
+                    "operationOrderId": 11562,
+                    "operationOrderDisplayNo": "2023-4-T",
+                    "motherGradeId": 30,
+                    "motherGradeCode": "RECONCILIATION",
+                    "isNonCompliant": false,
+                    "isNonCompliantStr": "No",
+                    "isDeleted": false,
+                    "dateDeleted": null
+                },
+                {
+                    "packingGradeId": 2038,
+                    "packingGradeCode": "X2OF",
+                    "id": "a180aa16-a257-4b06-3fd9-08dc552b2a30",
+                    "entryDate": "2024-04-04T01:00:00",
+                    "entryDateString": "04/04/2024",
+                    "entryDateTimeString": "01:00:00",
+                    "shiftType": 1,
+                    "shiftTypeTitle": "Night",
+                    "operationOrderId": 11562,
+                    "operationOrderDisplayNo": "2023-4-T",
+                    "motherGradeId": 30,
+                    "motherGradeCode": "RECONCILIATION",
+                    "isNonCompliant": false,
+                    "isNonCompliantStr": "No",
+                    "isDeleted": false,
+                    "dateDeleted": null
+                },
+                {
+                    "packingGradeId": 2217,
+                    "packingGradeCode": "S1CUA/BLL",
+                    "id": "c94dff70-691d-40cc-149a-08dc530ac535",
+                    "entryDate": "2024-04-02T02:00:00",
+                    "entryDateString": "02/04/2024",
+                    "entryDateTimeString": "02:00:00",
+                    "shiftType": 0,
+                    "shiftTypeTitle": "Day",
+                    "operationOrderId": 10476,
+                    "operationOrderDisplayNo": "2022-108-T",
+                    "motherGradeId": 1198,
+                    "motherGradeCode": "S1CUA/BLL",
+                    "isNonCompliant": false,
+                    "isNonCompliantStr": "No",
+                    "isDeleted": false,
+                    "dateDeleted": null
+                }
+            ]
+        }
+    }
+}

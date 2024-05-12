@@ -1,0 +1,87 @@
+<div>
+  <ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+  <div class="card card-header">
+    <h4 class="mb-0">Calculated tests result</h4>
+  </div>
+  <app-table
+      [disablePagination]="true"
+      [tableRowsTemplateRef]="tableRowsTemplate"
+      [tableHeaderRowTemplateRef]="tableHeaderRowTemplate">
+  </app-table>
+  <div class="card card-footer">
+    <ng-container *ngIf="averageLength$|async as averageLength">
+      <h4 class="mb-0">Average length: {{averageLength | percent:'1.2-2'}}</h4>
+    </ng-container>
+  </div>
+  <ng-template #tableHeaderRowTemplate>
+      <tr class="fw-bolder text-muted">
+          <th class="min-w-120px text-center">% &lt;0.5</th>
+          <th class="min-w-120px text-center">% 0.5-1.0</th>
+          <th class="min-w-120px text-center">% 1.0-1.5</th>
+          <th class="min-w-120px text-center">% 1.5-2.0</th>
+          <th class="min-w-120px text-center">% 2.0-2.5</th>
+          <th class="min-w-120px text-center">% 2.5-3.0</th>
+          <th class="min-w-120px text-center">% 3.0-3.5</th>
+          <th class="min-w-120px text-center">% 3.5-4.0</th>
+          <th class="min-w-120px text-center">% >4</th>
+          <th class="min-w-120px text-center">% 1"-4"</th>
+      </tr>
+  </ng-template>
+
+  <ng-template #tableRowsTemplate>
+      <ng-container >
+          <tr *ngIf="dataSource$ | async as testResult">
+              <td class="text-center">
+                  <span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+                    {{testResult.lessThanPoint5 | percent:'1.2-2'}}
+                  </span>
+              </td>
+              <td class="text-center">
+                  <span class="text-dark fw-bolder text-hover-primary fs-6">
+                    {{testResult.betweenPoint5And1 | percent:'1.2-2'}}
+                  </span>
+                  </td>
+              <td class="text-center">
+                  <span class="text-dark fw-bolder text-hover-primary fs-6">
+                    {{testResult.between1And1Point5| percent:'1.2-2'}}
+                  </span>
+              </td>
+              <td class="text-center">
+                  <span class="text-dark fw-bolder text-hover-primary fs-6">
+                    {{testResult.between1Point5And2 | percent:'1.2-2'}}
+                  </span>
+              </td>
+              <td class="text-center">
+                  <span class="text-dark fw-bolder text-hover-primary fs-6">
+                    {{testResult.between2And2Point5 | percent:'1.2-2'}}
+                  </span>
+              </td>
+              <td class="text-center">
+                <span class="text-dark fw-bolder text-hover-primary fs-6">
+                  {{testResult.between2Point5And3 | percent:'1.2-2'}}
+                </span>
+            </td>
+            <td class="text-center">
+                <span class="text-dark fw-bolder text-hover-primary fs-6">
+                  {{testResult.between3And3Point5 | percent:'1.2-2'}}
+                </span>
+                </td>
+            <td class="text-center">
+                <span class="text-dark fw-bolder text-hover-primary fs-6">
+                  {{testResult.between3Point5And4 | percent:'1.2-2'}}
+                </span>
+            </td>
+            <td class="text-center">
+                <span class="text-dark fw-bolder text-hover-primary fs-6">
+                  {{testResult.moreThan4 | percent:'1.2-2'}}
+                </span>
+            </td>
+            <td class="text-center">
+                <span class="text-dark fw-bolder text-hover-primary fs-6">
+                  {{testResult.between1To4 | percent:'1.2-2'}}
+                </span>
+            </td>
+          </tr>
+      </ng-container>
+  </ng-template>
+</div>

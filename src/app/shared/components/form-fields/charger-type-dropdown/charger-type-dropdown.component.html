@@ -1,0 +1,10 @@
+<div class="field-wrapper form-floating" (click)="onClick()" [class.is-invalid]="invalid">
+  <ng-select
+      [(ngModel)]="chargerTypeId"
+      (ngModelChange)="selectionChanged()"
+      [items]="chargerTypes"
+      bindLabel="title"
+      bindValue="key">
+  </ng-select>
+  <label>Charger type</label>
+</div>

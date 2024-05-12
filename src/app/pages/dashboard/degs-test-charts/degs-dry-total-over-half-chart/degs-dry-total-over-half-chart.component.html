@@ -1,0 +1,13 @@
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<div *ngIf="dataSource | async as chartData">
+	<app-chart-portlet
+		[hideDefaultFilters]="hideDefaultFilters"
+		[defaultPageSize]="defaultPageSize"
+		[totalPages]="totalPages"
+		[chartModel]="chartData"
+		[newFilterFields]="additionalFilters"
+		(pageChanged)="onPageChanged($event.page, $event.criteria)"
+		(chartFilterResult)="setChartFilterCriteria($event)">
+	</app-chart-portlet>
+</div>
+

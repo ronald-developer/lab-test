@@ -1,0 +1,28 @@
+.loading-container{
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    &.block-page{
+        width: 100%;
+        height: 100%;
+    }
+    background-color: #f5fff9ab;
+    padding: 5px;
+    z-index: 99;
+}
+
+.spinner-container, .loading-title
+{
+    align-self: center;
+    margin: 0 5px;
+}
+
+.close-loading{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}

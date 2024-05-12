@@ -1,0 +1,12 @@
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<app-banner-message [location]="'component'"></app-banner-message>
+<ng-template #formTemplateRef>
+  <app-flag-on-stem-form [initialData]="flagOnStemForm" [isEdit]="true" [reset]="reset" (formChangeEventResult)="update($event)"></app-flag-on-stem-form>
+</ng-template>
+<app-create-edit-template
+  (closeDialog)="close()"
+  [isEdit]="true"
+  [contentTitle]="'Update flag on stem test'"
+  [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>
+<app-flag-on-stem-test-result></app-flag-on-stem-test-result>

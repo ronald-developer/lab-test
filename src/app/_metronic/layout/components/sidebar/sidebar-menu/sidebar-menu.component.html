@@ -1,0 +1,44 @@
+<!--begin::Menu wrapper-->
+<div id="kt_app_sidebar_menu_wrapper" class="app-sidebar-wrapper hover-scroll-overlay-y my-5" data-kt-scroll="true" data-kt-scroll-activate="true" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_app_sidebar_logo, #kt_app_sidebar_footer" data-kt-scroll-wrappers="#kt_app_sidebar_menu"
+    data-kt-scroll-offset="5px" data-kt-scroll-save-state="true">
+    <!--begin::Menu-->
+    <div class="menu menu-column menu-rounded menu-sub-indention px-3" id="#kt_app_sidebar_menu" data-kt-menu="true" data-kt-menu-expand="false">
+        <!-- Dashboard -->
+        <div class="menu-item">
+            <a class="menu-link without-sub" routerLink="/dashboard" routerLinkActive="active">
+                <span class="menu-icon">
+                    <span [inlineSVG]="'./assets/media/icons/home.svg'" class="svg-icon svg-icon-2"></span>
+                </span>
+                <span class="menu-title">Dashboard</span>
+            </a>
+        </div>
+
+		<div class="menu-item">
+            <div class="menu-content pt-8 pb-2">
+              <span class="menu-section text-muted text-uppercase fs-8 ls-1">Reports</span>
+            </div>
+        </div>
+
+		<app-sidebar-menu-nav [navigationItems]="reportsNavigationMenu"></app-sidebar-menu-nav>
+
+        <div class="menu-item">
+            <div class="menu-content pt-8 pb-2">
+              <span class="menu-section text-muted text-uppercase fs-8 ls-1">Tests</span>
+            </div>
+        </div>
+
+        <!-- pages -->
+        <app-sidebar-menu-nav [navigationItems]="labTestsNavigationMenu"></app-sidebar-menu-nav>
+
+        <div class="menu-item">
+          <div class="menu-content pt-8 pb-2">
+            <span class="menu-section text-muted text-uppercase fs-8 ls-1">Lab module setup</span>
+          </div>
+        </div>
+
+        <app-sidebar-menu-nav [navigationItems]="setupNavigationMenu"></app-sidebar-menu-nav>
+
+    </div>
+    <!--end::Menu-->
+</div>
+<!--end::Menu wrapper-->

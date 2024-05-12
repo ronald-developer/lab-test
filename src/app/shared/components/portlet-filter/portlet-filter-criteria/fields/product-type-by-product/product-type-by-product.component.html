@@ -1,0 +1,10 @@
+
+<div [formGroup]="formFilters" *ngIf="!hide">
+	<app-product-types-dropdown
+		formControlName="{{controlName}}"
+		(productTypeChanged)="productTypeChanged($event)"
+		[operationOrderId]="operationOrder"
+		[packingGradeId]="packingGradeByProduct"
+		[disabled]="true">
+	</app-product-types-dropdown>
+  </div>

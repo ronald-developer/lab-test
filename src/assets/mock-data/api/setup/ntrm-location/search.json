@@ -1,0 +1,20 @@
+{
+    "errorMessages": null,
+    "response": {
+        "data": {
+            "totalCount": 2,
+            "results": [
+                {
+                    "id": "f8c0eaad-7b6b-49b2-12e2-08dc0200d1c1",
+                    "name": "Africa",
+                    "isActive": true
+                },
+                {
+                    "id": "61f42fb7-e04f-423a-12e1-08dc0200d1c1",
+                    "name": "Philippines",
+                    "isActive": true
+                }
+            ]
+        }
+    }
+}

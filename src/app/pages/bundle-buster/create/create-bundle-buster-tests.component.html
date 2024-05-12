@@ -1,0 +1,9 @@
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<ng-template #formTemplateRef>
+  <app-bundle-buster-form [reset]="reset" (formChangeEventResult)="save($event)"></app-bundle-buster-form>
+</ng-template>
+<app-create-edit-template
+  [contentTitle]="'Create bundle buster test'"
+  [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>
+<app-bundle-buster-test-result></app-bundle-buster-test-result>

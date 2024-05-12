@@ -1,0 +1,193 @@
+<div>
+	<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+	<div class="card-header border-0 pt-5">
+		<div class="card-toolbar">
+			<app-portlet-filter
+				[pinned]="true"
+				[form]="formFilter"
+				[tableFilterTitle]="'Last fifteen tests results'"
+				(valueChanged)="onFilterCriteriaChanged($event)"
+				(refresh)="search()"
+				(search)="search()">
+			</app-portlet-filter>
+		</div>
+	</div>
+
+	<app-table
+		[tableRowsTemplateRef]="tableRowsTemplate"
+		[tableHeaderRowTemplateRef]="tableHeaderRowTemplate"
+		[currentPage]="1"
+		[disablePagination]="true"
+		(pageChanged)="search($event)">
+	</app-table>
+
+	<ng-template #tableHeaderRowTemplate>
+		<tr class="fw-bolder text-muted">
+			<th class="min-w-120px text-center">Test #</th>
+			<th class="min-w-140px text-center">Mother grade</th>
+			<th class="min-w-150px text-center">Operation order</th>
+			<th class="min-w-120px text-center">Entry date</th>
+			<th class="min-w-120px text-center">Shift type</th>
+			<th class="min-w-120px text-center">Time</th>
+			<th class="min-w-120px text-center">Carton no</th>
+			<th class="min-w-120px text-center">% OVER 1"</th>
+			<th class="min-w-120px text-center">% OVER 1/2"</th>
+			<th class="min-w-120px text-center">% TOTAL OVER 1/2"</th>
+			<th class="min-w-120px text-center">% OVER 1/4"</th>
+			<th class="min-w-120px text-center">% TOTAL OVER 1/4"</th>
+			<th class="min-w-120px text-center">% OVER 1/8"</th>
+			<th class="min-w-120px text-center">% DEGS PAN</th>
+			<th class="min-w-120px text-center">% THRU 1/4</th>
+			<th class="min-w-120px text-center">% OBJ</th>
+			<th class="min-w-120px text-center">% # 7</th>
+			<th class="min-w-120px text-center">% # 12</th>
+			<th class="min-w-120px text-center">% # 7 + # 12</th>
+			<th class="min-w-120px text-center">% STEM PAN</th>
+			<th class="min-w-120px text-center">% TOTAL STEM</th>
+			<th class="min-w-120px text-center">TOTAL STEM HANDSTRIP</th>
+		</tr>
+	</ng-template>
+
+	<ng-template #tableRowsTemplate>
+		<ng-container *ngIf="dataSource|async as source">
+			<ng-container *ngFor="let entry of source">
+				<tr *ngFor="let item of entry.details">
+					<ng-container>
+						<td class="text-center">
+							<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+								{{item.testIndex}}
+							</span>
+						</td>
+						<td class="text-center">
+							<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+								{{item.motherGradeCode}}
+							</span>
+						</td>
+						<td class="text-center">
+							<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+							{{item.operationOrderDisplayNo}}
+							</span>
+						</td>
+						<td class="text-center">
+							<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+								{{item.entryDate | date:'dd/MM/yyyy'}}
+							</span>
+						</td>
+						<td class="text-center">
+							<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+								{{item.shiftTypeTitle}}
+							</span>
+						</td>
+						<td class="text-center">
+							<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+								{{item.entryDateTimeString}}
+							</span>
+						</td>
+						<td class="text-center">
+							<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+								{{item.cartonNo}}
+							</span>
+						</td>
+						<ng-container *ngTemplateOutlet="tdTestPropsTemplate; context:{$implicit:item}"></ng-container>
+					</ng-container>
+				</tr>
+				<tr class="bg-light">
+					<td colspan="7">
+						<span class="fw-bolder me-2 text-success">
+							SUBTOTAL AVERAGE
+						</span>
+					</td>
+					<ng-container *ngTemplateOutlet="tdTestPropsTemplate; context:{$implicit:entry.averageEntry}"></ng-container>
+				</tr>
+				<tr class="bg-light">
+					<td colspan="7">
+						<span class="fw-bolder me-2 text-success">
+							STANDARD DEVIATION
+						</span>
+					</td>
+					<ng-container *ngTemplateOutlet="tdTestPropsTemplate; context:{$implicit:entry.standardDeviationEntry}"></ng-container>
+				</tr>
+			</ng-container>
+
+		</ng-container>
+
+	</ng-template>
+
+	<ng-template #tdTestPropsTemplate let-item>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctOverOne|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctOverHalf|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctTotalOverHalf|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctOverQuarter|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctTotalOverQuarter|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctOverEighth|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctDegsPan|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctThruQuarter|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctStemObj|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctStemSevenMesh|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctStemTwelveMesh|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctStemSevenTwelveMesh|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctStemPan|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctTotalStem|number:'1.2-2'}}
+			</span>
+		</td>
+		<td class="text-center">
+			<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+				{{item.pctTotalHandStripStem|number:'1.2-2'}}
+			</span>
+		</td>
+	</ng-template>
+  </div>

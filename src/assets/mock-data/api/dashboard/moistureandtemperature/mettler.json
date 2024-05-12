@@ -1,0 +1,95 @@
+{
+    "errorMessages": null,
+    "response": {
+        "data": {
+            "ucl": 15,
+            "target": 12,
+            "lcl": 6,
+            "details": {
+                "totalCount": 2,
+                "results": [
+                    {
+                        "cartonNo": 123123,
+                        "mettlerResult": 10
+                    },
+                    {
+                        "cartonNo": 123123,
+                        "mettlerResult": 15
+                    },
+					{
+                        "cartonNo": 123123,
+                        "mettlerResult": 20
+                    },
+                    {
+                        "cartonNo": 123123,
+                        "mettlerResult": 25
+                    },
+					{
+                        "cartonNo": 123123,
+                        "mettlerResult": 10
+                    },
+                    {
+                        "cartonNo": 123123,
+                        "mettlerResult": 15
+                    },
+					{
+                        "cartonNo": 123123,
+                        "mettlerResult": 10
+                    },
+                    {
+                        "cartonNo": 123123,
+                        "mettlerResult": 15
+                    },
+					{
+                        "cartonNo": 123123,
+                        "mettlerResult": 10
+                    },
+                    {
+                        "cartonNo": 123123,
+                        "mettlerResult": 15
+                    },
+					{
+                        "cartonNo": 123123,
+                        "mettlerResult": 30
+                    },
+                    {
+                        "cartonNo": 123123,
+                        "mettlerResult": 35
+                    },
+					{
+                        "cartonNo": 123123,
+                        "mettlerResult": 10
+                    },
+                    {
+                        "cartonNo": 123123,
+                        "mettlerResult": 15
+                    },
+					{
+                        "cartonNo": 123123,
+                        "mettlerResult": 10
+                    },
+                    {
+                        "cartonNo": 123123,
+                        "mettlerResult": 15
+                    },
+					{
+                        "cartonNo": 123123,
+                        "mettlerResult": 10
+                    },
+                    {
+                        "cartonNo": 123123,
+                        "mettlerResult": 15
+                    },
+					{
+                        "cartonNo": 123123,
+                        "mettlerResult": 10
+                    },
+                    {
+                        "cartonNo": 123123,
+                        "mettlerResult": 5
+                    }
+                ]
+            }
+        }
+    }
+}

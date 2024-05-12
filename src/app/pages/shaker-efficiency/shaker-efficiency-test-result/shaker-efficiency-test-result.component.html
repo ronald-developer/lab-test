@@ -1,0 +1,52 @@
+<div>
+  <div class="card card-header">
+    <h4 class="mb-0">Calculated tests result</h4>
+  </div>
+  <app-table
+      [disablePagination]="true"
+      [tableRowsTemplateRef]="tableRowsTemplate"
+      [tableHeaderRowTemplateRef]="tableHeaderRowTemplate">
+  </app-table>
+
+  <ng-template #tableHeaderRowTemplate>
+      <tr class="fw-bolder text-muted">
+          <th class="min-w-120px text-center">% Over 1"</th>
+          <th class="min-w-120px text-center">% Between 1/2" and 1"</th>
+		  <th class="min-w-120px text-center">% Between 1/4" and 1/2"</th>
+		  <th class="min-w-120px text-center">% Between 1/8" and 1/4"</th>
+		  <th class="min-w-120px text-center">% Below 1/8"</th>
+      </tr>
+  </ng-template>
+
+  <ng-template #tableRowsTemplate>
+      <ng-container >
+          <tr *ngIf="dataSource$ | async as testResult">
+              <td class="text-center">
+                  <span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+                    {{testResult.overOne | percent:'1.2-2'}}
+                  </span>
+              </td>
+              <td class="text-center">
+                  <span class="text-dark fw-bolder text-hover-primary fs-6">
+                    {{testResult.betweenHalfAndOne | percent:'1.2-2'}}
+                  </span>
+              </td>
+			  <td class="text-center">
+				<span class="text-dark fw-bolder text-hover-primary fs-6">
+				  {{testResult.betweenQuarterAndHalf | percent:'1.2-2'}}
+				</span>
+			</td>
+			<td class="text-center">
+				<span class="text-dark fw-bolder text-hover-primary fs-6">
+				  {{testResult.betweenEighthAndQuarter | percent:'1.2-2'}}
+				</span>
+			</td>
+			<td class="text-center">
+				<span class="text-dark fw-bolder text-hover-primary fs-6">
+				  {{testResult.lessThanEighth | percent:'1.2-2'}}
+				</span>
+			</td>
+          </tr>
+      </ng-container>
+  </ng-template>
+</div>

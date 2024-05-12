@@ -1,0 +1,33 @@
+export interface ResponseButtedLooseLeafTestModel {
+  id: string;
+  operationOrderId: number;
+  motherGradeId: number;
+  shiftType: number;
+  entryDate: Date;
+  sampleWeight: number;
+  freeLamina: number;
+  scrap: number;
+  looseButts: number;
+  unbuttedEnds: number;
+  nakedStems: number;
+  buttLengthLeft1: number;
+  buttLengthLeft2: number;
+  buttLengthLeft3: number;
+  buttLengthLeft4: number;
+  buttLengthLeft5: number;
+  buttLengthLeft6: number;
+  buttLengthLeft7: number;
+  buttLengthLeft8: number;
+  buttLengthLeft9: number;
+  buttLengthLeft10: number;
+  buttLengthRight1: number;
+  buttLengthRight2: number;
+  buttLengthRight3: number;
+  buttLengthRight4: number;
+  buttLengthRight5: number;
+  buttLengthRight6: number;
+  buttLengthRight7: number;
+  buttLengthRight8: number;
+  buttLengthRight9: number;
+  buttLengthRight10: number;
+}

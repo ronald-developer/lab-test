@@ -1,0 +1,9 @@
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<ng-template #formTemplateRef>
+  <app-loose-leaf-form [reset]="reset" (formChangeEventResult)="save($event)"></app-loose-leaf-form>
+</ng-template>
+<app-create-edit-template
+  [contentTitle]="'Create loose leaf test'"
+  [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>
+<app-loose-leaf-test-result></app-loose-leaf-test-result>

@@ -1,0 +1,45 @@
+<div class="field-wrapper form-floating" [class.is-invalid]="invalid">
+    <ng-template #rangePickerTemplate>
+        <input
+          autocomplete="off"
+          class="form-control"
+          placeholder="yyyy-mm-dd"
+          name="fromDate"
+          [(ngModel)]="dateEntry"
+          (ngModelChange)="selectionChanged()"
+          #dp="bsDaterangepicker"
+          bsDaterangepicker
+          [dateCustomClasses]="dateCustomClasses"
+          [bsConfig]="{ adaptivePosition: true, rangeInputFormat : 'DD/MM/YYYY', dateInputFormat:'DD/MM/YYYY'}"
+        />
+        <span class="calendar-picker">
+            <i class="bi bi-calendar3 calendar-icon" type="button"
+                (click)="dp.toggle()"
+                [attr.aria-expanded]="dp.isOpen">
+            </i>
+        </span>
+    </ng-template>
+
+    <ng-container *ngIf="!useDateRange;else rangePickerTemplate">
+        <input
+            autocomplete="off"
+            class="form-control"
+            placeholder="yyyy-mm-dd"
+            name="fromDate"
+            [(ngModel)]="dateEntry"
+            (ngModelChange)="selectionChanged()"
+            #dp="bsDatepicker"
+            bsDatepicker
+            [dateCustomClasses]="dateCustomClasses"
+            [bsConfig]="{ adaptivePosition: true,  dateInputFormat: 'DD/MM/YYYY'}"
+        />
+      <span class="calendar-picker">
+          <i class="bi bi-calendar3 calendar-icon" type="button"
+              (click)="dp.toggle()"
+              [attr.aria-expanded]="dp.isOpen">
+          </i>
+      </span>
+    </ng-container>
+    <label>Select date</label>
+</div>
+

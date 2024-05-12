@@ -1,0 +1,21 @@
+{
+    "errorMessages": null,
+    "response": {
+        "data": {
+            "id": "c92ae705-71ac-4ef5-3fda-08dc552b2a30",
+            "operationOrderId": 11562,
+            "packingGradeId": 2038,
+            "shiftType": 1,
+            "entryDate": "2024-04-04T01:02:00",
+            "lessThanPoint5": 1,
+            "betweenPoint5And1": 2,
+            "between1And1Point5": 3,
+            "between1Point5And2": 5,
+            "between2And2Point5": 5,
+            "between2Point5And3": 65,
+            "between3And3Point5": 2,
+            "between3Point5And4": 3,
+            "moreThan4": 4
+        }
+    }
+}

@@ -1,0 +1,7 @@
+
+<div [formGroup]="formFilters" *ngIf="!hide">
+	<app-product-types-dropdown
+		formControlName="{{controlName}}"
+		[operationOrderId]="operationOrder">
+	</app-product-types-dropdown>
+  </div>

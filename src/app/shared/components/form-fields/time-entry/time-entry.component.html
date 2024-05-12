@@ -1,0 +1,6 @@
+<div class="field-wrapper">
+  <div #parentContainer class="form-floating" [class.is-invalid]="invalid">
+    <label>Set time</label>
+    <timepicker [showSpinners]="false" (click)="onEntryClicked()" [(ngModel)]="entryTime" (ngModelChange)="modelChanged()" class="flex-grow-1"></timepicker>
+  </div>
+</div>

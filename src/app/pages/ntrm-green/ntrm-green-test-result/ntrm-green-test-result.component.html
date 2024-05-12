@@ -1,0 +1,80 @@
+<div>
+	<div class="card card-header">
+		<h4 class="mb-0">Calculated tests result</h4>
+	</div>
+	<app-table [disablePagination]="true" [tableRowsTemplateRef]="tableRowsTemplate" [tableHeaderRowTemplateRef]="tableHeaderRowTemplate">
+	</app-table>
+
+	<ng-template #tableHeaderRowTemplate>
+		<tr class="fw-bolder text-muted">
+			<th class="min-w-150px text-center">CATEGORY 1 SYNTHETIC PCS</th>
+			<th class="min-w-150px text-center">CATEGORY 1 MINERAL PCS</th>
+			<th class="min-w-150px text-center">CATEGORY 2 NON-SYNTHETIC PCS</th>
+			<th class="min-w-150px text-center">CATEGORY 2 NATURAL PCS</th>
+			<th class="min-w-150px text-center">CATEGORY 2 ORGANIC PCS</th>
+			<th class="min-w-150px text-center">CATEGORY 1 SYNTHETIC PCS/KG</th>
+			<th class="min-w-150px text-center">CATEGORY 1 MINERAL PCS/KG</th>
+			<th class="min-w-150px text-center">CATEGORY 2 NON-SYNTHETIC PCS/KG</th>
+			<th class="min-w-150px text-center">CATEGORY 2 NATURAL PCS/KG</th>
+			<th class="min-w-150px text-center">CATEGORY 2 ORGANIC PCS/KG</th>
+		</tr>
+	</ng-template>
+
+	<ng-template #tableRowsTemplate>
+		<ng-container>
+			<tr *ngIf="dataSource$ | async as testResult">
+				<td class="text-center">
+					<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+						{{testResult.category1Mineral}}
+					</span>
+				</td>
+				<td class="text-center">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{testResult.category1Synthetic}}
+					</span>
+				</td>
+				<td class="text-center">
+					<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+						{{testResult.category2Natural}}
+					</span>
+				</td>
+				<td class="text-center">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{testResult.category2NonSynthetic}}
+					</span>
+				</td>
+				<td class="text-center">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{testResult.category2Organic}}
+					</span>
+				</td>
+
+				<td class="text-center">
+					<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+						{{testResult.category1MineralPcsKg}}
+					</span>
+				</td>
+				<td class="text-center">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{testResult.category1SyntheticPcsKg}}
+					</span>
+				</td>
+				<td class="text-center">
+					<span class="text-center text-dark fw-bolder text-hover-primary fs-6">
+						{{testResult.category2NaturalPcsKg}}
+					</span>
+				</td>
+				<td class="text-center">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{testResult.category2NonSyntheticPcsKg}}
+					</span>
+				</td>
+				<td class="text-center">
+					<span class="text-dark fw-bolder text-hover-primary fs-6">
+						{{testResult.category2OrganicPcsKg}}
+					</span>
+				</td>
+			</tr>
+		</ng-container>
+	</ng-template>
+</div>

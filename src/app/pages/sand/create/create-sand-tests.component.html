@@ -1,0 +1,10 @@
+
+<ng-template #formTemplateRef>
+	<app-sand-form [reset]="reset" (formChangeEventResult)="save($event)"></app-sand-form>
+  </ng-template>
+  <ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+  <app-create-edit-template
+	[contentTitle]="'Create sand test'"
+	[contentBodyTemplateRef]="formTemplateRef">
+  </app-create-edit-template>
+  <app-sand-test-result></app-sand-test-result>

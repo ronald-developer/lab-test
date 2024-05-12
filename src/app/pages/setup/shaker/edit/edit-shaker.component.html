@@ -1,0 +1,11 @@
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<app-banner-message [location]="'component'"></app-banner-message>
+<ng-template #formTemplateRef>
+  <app-shaker-form [initialData]="shakerForm" [isEdit]="true" [reset]="reset" (formChangeEventResult)="update($event)"></app-shaker-form>
+</ng-template>
+<app-create-edit-template
+  (closeDialog)="close()"
+  [isEdit]="true"
+  [contentTitle]="'Update shaker'"
+  [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>

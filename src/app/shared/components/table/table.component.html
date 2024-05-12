@@ -1,0 +1,32 @@
+<div class="card-body bg-white p-5">
+    <div class="table-responsive table-wrapper">
+		<ng-container *ngIf="enableNavPagination">
+			<button
+				[disabled]="navPage===1"
+				(click)="onPrevPageClick()" role="button" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary btn-color-secondary chart-arrow-left">
+				<span [inlineSVG]="'./assets/media/icons/arr-left.svg'" class="svg-icon svg-icon-2"></span>
+			</button>
+			<button
+				(click)="onNextPageClick()" role="button" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary btn-color-secondary chart-arrow-right">
+				<span [inlineSVG]="'./assets/media/icons/arr-right.svg'" class="svg-icon svg-icon-2"></span>
+			</button>
+		</ng-container>
+
+        <table class="table table-row-bordered table-row-gray-100 align-middle gs-0 gy-3">
+            <thead class="bg-gray-100">
+                <ng-container *ngTemplateOutlet="tableHeaderRowTemplateRef"></ng-container>
+            </thead>
+            <tbody>
+                <ng-container *ngTemplateOutlet="tableRowsTemplateRef"></ng-container>
+            </tbody>
+        </table>
+    </div>
+    <pagination class="d-flex justify-content-end" *ngIf="!disablePagination"
+        [itemsPerPage]="pageSize"
+        [boundaryLinks]="true"
+        [maxSize]="5"
+        [totalItems]="totalCount"
+        [(ngModel)]="currentPage"
+        (pageChanged)="onPageChange($event)">
+    </pagination>
+</div>

@@ -1,0 +1,54 @@
+<div>
+	<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+	<div class="card-header border-0 pt-5">
+		<div class="card-toolbar">
+			<!-- header -->
+			<div class="bg-white">
+				<div class="p-3 d-flex">
+					<div class="menu-content fs-2 text-dark fw-bolder px-1 py-1 flex-grow-1 align-self-center">
+						Upload temperature and hearson result
+					</div>
+				</div>
+			</div>
+			<div class="bg-white" *ngIf="form" >
+				<div [formGroup]="form" class="card-header border-0 d-flex px-4 py-3 row g-3">
+					<div *ngIf="form.controls.operationOrderId as ctrl" class="col-md-12 app-form-control">
+						<app-operation-order-dropdown
+							formControlName="operationOrderId"
+							[invalid]="isOperationOrderDropdownInvalid">
+						</app-operation-order-dropdown>
+					</div>
+
+					<div class="form-group" [class.has-error]="file?.touched && file?.invalid">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input accept=".xlsx" type="file" (change)="onFileSelected($event)" />
+							<span class="text-danger" *ngIf="file?.touched && file?.invalid">
+								<span class="help-block" for="file" *ngIf="file?.errors?.required">Please select an excel file</span>
+								<span class="help-block" for="file" *ngIf="file?.errors?.requiredFileType">Please select valid excel file!</span>
+								<span class="help-block" for="file" *ngIf="file?.errors?.requiredFileSize">File cannot be bigger than 5MB!</span>
+							</span>
+						</div>
+					</div>
+
+				</div>
+				<div class="p-3">
+					<button class="mx-1 btn btn-primary btn-color-secondary btn-sm" (click)="upload()" [disabled]="!form.valid">
+						<i class="fas fa-upload"></i>
+						Upload
+					</button>
+					<button class="mx-1 btn btn-primary btn-color-secondary btn-sm" (click)="downloadUploadSheet()" [disabled]="!operationOrderId?.valid">
+						<i class="fas fa-download"></i>
+						Download
+					</button>
+				</div>
+			</div>
+
+			<div class="separator border-primary mb-1 opacity-25"></div>
+
+		</div>
+	</div>
+
+	<!-- content -->
+	<app-upload-result [result]="uploadResult"></app-upload-result>
+
+  </div>

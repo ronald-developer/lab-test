@@ -1,0 +1,9 @@
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<ng-template #formTemplateRef>
+    <app-short-stem-form [reset]="reset" (formChangeEventResult)="save($event)"></app-short-stem-form>
+</ng-template>
+<app-create-edit-template
+    [contentTitle]="'Create short stem test'"
+    [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>
+<app-short-stem-test-result></app-short-stem-test-result>

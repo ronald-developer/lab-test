@@ -1,0 +1,8 @@
+<ng-template #appLoadingUi="appLoadingUi" appLoadingUi [blockPage]="true"></ng-template>
+<ng-template #formTemplateRef>
+  <app-shaker-form [reset]="reset" (formChangeEventResult)="save($event)"></app-shaker-form>
+</ng-template>
+<app-create-edit-template
+  [contentTitle]="'Create shaker'"
+  [contentBodyTemplateRef]="formTemplateRef">
+</app-create-edit-template>
